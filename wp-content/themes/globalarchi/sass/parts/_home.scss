@@ -1,6 +1,16 @@
 /* Home */ 
 
 .home{
+	#logo{
+		@include column(5);
+		margin-left:10%;
+		
+		a{
+			display: block;
+			padding:32px;
+			background:#fff;
+		}
+	}
 	.bg_fullscreen{
 		width:100%; //debug le fullscreen au chargement de page
 		position:fixed;
