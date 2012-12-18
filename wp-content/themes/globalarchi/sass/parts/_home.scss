@@ -1,0 +1,43 @@
+/* Home */ 
+
+.home{
+	.bg_fullscreen{
+		width:100%; //debug le fullscreen au chargement de page
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:-1;
+	}
+	.fullscreen_pattern{
+		position: absolute;
+		width:100%;
+		background:image-url('fullscreen_pattern.png')repeat 0 0 transparent;
+	}
+
+	.description_projet{
+		width:350px;
+		height:280px;
+		border:solid 1px rgba(0, 0, 0, 0.4);
+		float:left;
+		background-color:$white;
+		padding:30px;
+		top:5%;
+		right:10%;
+		position:absolute;
+		opacity:0;
+
+		h2{
+			font-size:30px;
+			font-family: $font-titles;
+			color:$light_black;
+			line-height: 1.2;
+		}
+
+		#keywords{
+			color:$red;
+			margin:20px 0;
+			font-size:12px;
+		}
+	}
+}
+/* END .home */ 

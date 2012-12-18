@@ -1,0 +1,23 @@
+/* Fonts */
+
+//Variables
+
+$fontBase: 16px !default;
+
+
+//Fonctions
+
+@function em($px: $fontBase, $base: $fontBase) {
+  @return #{$px/$base}em;
+  //@return $px;
+}
+
+
+
+//For Internet Explorer
+
+html {
+    font: $fontBase;
+}
+
+/* END Fonts */

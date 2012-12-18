@@ -1,0 +1,120 @@
+/* Components */
+
+
+/* Buttons */
+
+
+//btn .visit (on index.html...)
+.visit{
+	float:left;
+	margin-top:30px;
+	padding:6px 8px 6px 20px;
+	background:image-url('sprite.png')no-repeat 8px 8px $red;
+	text-transform:uppercase;
+	font-size:12px;
+	color:$white;
+	
+				
+	&:hover,
+	&:active{
+		background:image-url('sprite.png')no-repeat 8px 8px darken($red, 10%);
+	}
+				
+}
+
+
+
+
+//General
+
+@mixin button ($color1: #fdfdfd, $color2: #bcbcbc, $border: solid 1px #333333, $radius: 6px) {
+     
+    /*default color*/
+    background-color : mix($color1, $color2);
+
+	@include background(linear-gradient(top, $color1 0%, $color2 100%));
+	@include border-radius($radius);
+	border:$border;
+	
+	&:hover{
+		@include background(linear-gradient(top, lighten($color1, 7%) 0%, lighten($color2, 5%) 100%));
+	}
+}
+
+//Specific
+
+//Dark grey + gradients + border-radius + text-shadow
+/*@mixin btn-dark-grey{
+	//@include button(#5c5c5c, #383838, none, 0 6px 6px 6px);
+	//@include text-shadow(#000 1px 1px 0);
+}*/
+
+
+
+/*
+.btn{
+	color: #FFF;
+	@include button(#999, #666, none, 5px);	
+	@include text-shadow(#184162 0 -1px 0);
+	padding: 4px;
+	display: inline-block;
+	text-align: center;
+	font: 400 em(18px) $font-titles;
+	
+	@include pie-element();
+	@include button();
+	
+	&.primary{
+		@include btn-dark-grey(); 
+	}//END .primary
+	
+}//END .btn
+*/
+
+
+
+
+
+
+
+/* Zoom - plugin js */
+/*Some CSS*/
+.zoom_enable {width: 980px; position: relative;}
+
+/*Lets create the magnifying glass*/
+.large {
+	width: 175px; height: 175px;
+	position: absolute;
+	border-radius: 100%;
+/*Multiple box shadows to achieve the glass effect*/
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+	
+	/*Lets load up the large image first*/
+	background: url('../images/visuals/photo_archi1_med.jpg') no-repeat;
+	
+	/*hide the glass by default*/
+	display: none;
+}
+
+/*To solve overlap bug at the edges during magnification*/
+.small { display: block; }
+
+
+/* END buttons */
+
+/*-----------------------*/
+
+/* END components */
+
+
+
+
+
+
+
+
+
+
+

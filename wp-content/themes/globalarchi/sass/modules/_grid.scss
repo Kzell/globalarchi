@@ -1,0 +1,101 @@
+// based on semantic.gs
+
+// Utility function — you should never need to modify this
+@function gridsystem-width($columns:$columns) {
+	@return ($columnWidth * $columns) + ($gutterWidth * $columns);
+}
+
+
+//Default values // 980px
+$columnWidth: 70px !default;
+$gutterWidth: 10px !default;
+$columns: 12 !default;
+$totalWidth: gridsystem-width($columns) !default;
+$containerWidth: $totalWidth !default;
+
+
+// Uncomment these two lines and the star-hack width/margin lines below to enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
+// $min-width: 999999;
+// $correction: 0.5 / $min-width * 100;
+
+body {
+	width: 100%;
+	@include clearfix();
+}
+
+@mixin container() {
+    margin: 0 auto;
+    
+    @if unit($containerWidth) == '%' {
+       width: $containerWidth;
+    }
+    @else {
+       //width: $totalWidth - $gutterWidth;
+       width: $containerWidth;
+    }
+       
+
+    @include clearfix();
+}
+
+
+@mixin row($columns:$columns) {
+	display: block;
+	width: $totalWidth*(($gutterWidth + gridsystem-width($columns))/gridsystem-width($columns));
+	margin: 0 $totalWidth*((($gutterWidth*.5)/gridsystem-width($columns))*-1);
+	// *width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns))-$correction;
+	// *margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1)-$correction;
+	@include clearfix();
+}
+
+
+@mixin column($x,$columns:$columns) {
+	/*display: inline;*/
+	float: left;
+	width: $totalWidth*(((($gutterWidth+$columnWidth)*$x)-$gutterWidth) / gridsystem-width($columns));
+	margin: 0 $totalWidth*(($gutterWidth*.5)/gridsystem-width($columns));
+	// *width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;
+	// *margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns))-$correction;
+}
+@mixin push($offset:1) {
+	margin-left: $totalWidth*((($gutterWidth+$columnWidth)*$offset) / gridsystem-width($columns)) + $totalWidth*(($gutterWidth*.5)/gridsystem-width($columns));
+}
+@mixin pull($offset:1) {
+	margin-right: $totalWidth*((($gutterWidth+$columnWidth)*$offset) / gridsystem-width($columns)) + $totalWidth*(($gutterWidth*.5)/gridsystem-width($columns));
+}
+
+
+
+
+
+/*
+// Variables à définir pour les colonnes (par défaut 940px)
+// Ici 980px
+$columns:          12 !default;
+$columnWidth:      90px !default;
+$gutterWidth:      10px !default;
+$pxWidth:          ($columns * $columnWidth) + ($gutterWidth * ($columns - 1)) !default;
+$totalWidth:       $pxWidth !default;
+
+
+
+@mixin row () {
+
+   display: block;
+   margin-left: percentage($gutterWidth * -1 / $pxWidth);
+   width: $totalWidth;
+
+   @include clearfix();
+}
+
+@mixin column ($columns) {
+    float: left;	
+	margin-left: percentage($gutterWidth / $pxWidth);
+	width: percentage((($columnWidth * $columns) + ($gutterWidth * ($columns - 1))) / $pxWidth); 
+}
+
+@mixin push($columns) {
+	//margin-left: ($columnWidth * $columns) + ($gutterWidth * ($columns - 1)) + ($gutterWidth * 2);
+}
+
+*/

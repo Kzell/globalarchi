@@ -1,12 +1,13 @@
 
 	</div>
-
-	<footer id="colophon" role="contentinfo">
-			<div id="site-generator">
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
-			</div>
+	<footer class="hided" role="contentinfo">
+		<ul>
+			<li><a href="#">Mentions Légales</a></li>
+			<li><a href="#">Plan du site</a></li>
+		</ul>
+		<strong>&copy; Global Archi 2012</strong>
 	</footer>
-</div>
+	</div>
 
 <?php wp_footer(); ?>
 

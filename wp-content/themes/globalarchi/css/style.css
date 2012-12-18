@@ -1,0 +1,802 @@
+@charset "UTF-8";
+/* Style.css */
+/* Reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 20, ../sass/modules/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, ../sass/modules/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, ../sass/modules/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 36, ../sass/modules/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 39, ../sass/modules/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, ../sass/modules/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, ../sass/modules/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END reset */
+/* Mixins */
+/*END Mixins */
+/* line 21, ../sass/modules/_grid.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 9, ../sass/modules/_mixins.scss */
+body:before, body:after {
+  display: table;
+  content: "";
+}
+/* line 13, ../sass/modules/_mixins.scss */
+body:after {
+  clear: both;
+}
+
+/* Fonts */
+/* line 19, ../sass/modules/_fonts.scss */
+html {
+  font: 16px;
+}
+
+/* END Fonts */
+/* Components */
+/* Buttons */
+/* line 8, ../sass/modules/_components.scss */
+.visit {
+  float: left;
+  margin-top: 30px;
+  padding: 6px 8px 6px 20px;
+  background: url('../images/design/sprite.png?1353077597') no-repeat 8px 8px #c82121;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+}
+/* line 19, ../sass/modules/_components.scss */
+.visit:hover, .visit:active {
+  background: url('../images/design/sprite.png?1353077597') no-repeat 8px 8px #9c1a1a;
+}
+
+/*@mixin btn-dark-grey{
+	//@include button(#5c5c5c, #383838, none, 0 6px 6px 6px);
+	//@include text-shadow(#000 1px 1px 0);
+}*/
+/*
+.btn{
+	color: #FFF;
+	@include button(#999, #666, none, 5px);	
+	@include text-shadow(#184162 0 -1px 0);
+	padding: 4px;
+	display: inline-block;
+	text-align: center;
+	font: 400 em(18px) $font-titles;
+	
+	@include pie-element();
+	@include button();
+	
+	&.primary{
+		@include btn-dark-grey(); 
+	}//END .primary
+	
+}//END .btn
+*/
+/* Zoom - plugin js */
+/*Some CSS*/
+/* line 82, ../sass/modules/_components.scss */
+.zoom_enable {
+  width: 980px;
+  position: relative;
+}
+
+/*Lets create the magnifying glass*/
+/* line 85, ../sass/modules/_components.scss */
+.large {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url("../images/visuals/photo_archi1_med.jpg") no-repeat;
+  /*hide the glass by default*/
+  display: none;
+}
+
+/*To solve overlap bug at the edges during magnification*/
+/* line 102, ../sass/modules/_components.scss */
+.small {
+  display: block;
+}
+
+/* END buttons */
+/*-----------------------*/
+/* END components */
+/* line 37, ../sass/style.scss */
+body {
+  font-family: Arial, Helvetica, "Sans Serif";
+  background: url('../images/design/bg_pattern.jpg?1353069346') repeat 0 0 white;
+  position: relative;
+  overflow: hidden;
+  top: 9999px;
+}
+
+/* line 45, ../sass/style.scss */
+.wrapper {
+  width: 970px;
+  margin: 0 auto;
+}
+
+/* line 50, ../sass/style.scss */
+a {
+  color: #2B77BC;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-in, color 0.2s ease-out;
+  -moz-transition: background-color 0.1s ease-in, color 0.2s ease-out;
+  -o-transition: background-color 0.1s ease-in, color 0.2s ease-out;
+  transition: background-color 0.1s ease-in, color 0.2s ease-out;
+}
+
+/* line 55, ../sass/style.scss */
+input[type="submit"], .btn {
+  cursor: pointer;
+}
+
+/* line 60, ../sass/style.scss */
+input[type="text"],
+input[type="search"],
+input[type="email"] {
+  line-height: 20px;
+}
+
+/*BOUTONS*/
+/* line 66, ../sass/style.scss */
+.hide {
+  display: none;
+}
+
+/*IMPORT FILES*/
+/* Header */
+/* line 3, ../sass/parts/_header.scss */
+header {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  border-top: solid 1px rgba(0, 0, 0, 0.2);
+}
+/* line 11, ../sass/parts/_header.scss */
+header #logo {
+  float: left;
+  margin-left: 10%;
+}
+/* line 15, ../sass/parts/_header.scss */
+header #logo a {
+  display: block;
+  padding: 16px 0;
+}
+/* line 20, ../sass/parts/_header.scss */
+header #search_form {
+  float: right;
+}
+/* line 24, ../sass/parts/_header.scss */
+header nav {
+  float: left;
+  margin-left: 50%;
+  position: relative;
+  padding: 16px 0;
+  height: 100%;
+}
+/* line 31, ../sass/parts/_header.scss */
+header nav .menu {
+  float: left;
+}
+/* line 34, ../sass/parts/_header.scss */
+header nav .menu li {
+  float: left;
+  margin-right: 40px;
+}
+/* line 38, ../sass/parts/_header.scss */
+header nav .menu li a {
+  color: #222222;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 45, ../sass/parts/_header.scss */
+header nav .menu li a:hover, header nav .menu li a:active, header nav .menu li a.active {
+  color: #c82121;
+}
+/* line 52, ../sass/parts/_header.scss */
+header #lang_sel {
+  float: left;
+}
+/* line 55, ../sass/parts/_header.scss */
+header #btn_footer {
+  float: left;
+  height: 33px;
+  position: relative;
+}
+/* line 60, ../sass/parts/_header.scss */
+header #btn_footer a {
+  width: 20px;
+  height: 18px;
+  background: url('../images/design/sprite_arrow_header.png?1353004266') no-repeat 0 0;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+/* line 70, ../sass/parts/_header.scss */
+header .btn {
+  /*default color*/
+  background-color: #4a4a4a;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5c5c5c), color-stop(100%, #383838));
+  background: -webkit-linear-gradient(top, #5c5c5c 0%, #383838 100%);
+  background: -moz-linear-gradient(top, #5c5c5c 0%, #383838 100%);
+  background: -o-linear-gradient(top, #5c5c5c 0%, #383838 100%);
+  -pie-background: linear-gradient(top, #5c5c5c 0%, #383838 100%);
+  background: linear-gradient(top, #5c5c5c 0%, #383838 100%);
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  -ms-border-radius: 0 6px 6px 6px;
+  -o-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+  border: none;
+}
+/* line 39, ../sass/modules/_components.scss */
+header .btn:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6e6e6e), color-stop(100%, #454545));
+  background: -webkit-linear-gradient(top, #6e6e6e 0%, #454545 100%);
+  background: -moz-linear-gradient(top, #6e6e6e 0%, #454545 100%);
+  background: -o-linear-gradient(top, #6e6e6e 0%, #454545 100%);
+  -pie-background: linear-gradient(top, #6e6e6e 0%, #454545 100%);
+  background: linear-gradient(top, #6e6e6e 0%, #454545 100%);
+}
+
+/* END header*/
+/*Footer*/
+/* line 3, ../sass/parts/_footer.scss */
+footer {
+  clear: both;
+  position: fixed;
+  bottom: -36px;
+  width: 100%;
+  padding: 10px 0;
+  background: #222222;
+}
+/* line 11, ../sass/parts/_footer.scss */
+footer ul {
+  float: right;
+}
+/* line 12, ../sass/parts/_footer.scss */
+footer li {
+  float: left;
+  margin-left: 20px;
+}
+/* line 16, ../sass/parts/_footer.scss */
+footer li:first-child {
+  margin-left: 0;
+}
+/* line 20, ../sass/parts/_footer.scss */
+footer a {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 25, ../sass/parts/_footer.scss */
+footer strong {
+  float: left;
+  margin-left: 10%;
+  font-size: 12px;
+  color: #666666;
+}
+
+/* END footer*/
+/* Home */
+/* line 4, ../sass/parts/_home.scss */
+.home .bg_fullscreen {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* line 11, ../sass/parts/_home.scss */
+.home .fullscreen_pattern {
+  position: absolute;
+  width: 100%;
+  background: url('../images/design/fullscreen_pattern.png?1353071957') repeat 0 0 transparent;
+}
+/* line 17, ../sass/parts/_home.scss */
+.home .description_projet {
+  width: 350px;
+  height: 280px;
+  border: solid 1px rgba(0, 0, 0, 0.4);
+  float: left;
+  background-color: white;
+  padding: 30px;
+  top: 5%;
+  right: 10%;
+  position: absolute;
+  opacity: 0;
+}
+/* line 29, ../sass/parts/_home.scss */
+.home .description_projet h2 {
+  font-size: 30px;
+  font-family: "Scada", Arial, sans-serif;
+  color: #222222;
+  line-height: 1.2;
+}
+/* line 36, ../sass/parts/_home.scss */
+.home .description_projet #keywords {
+  color: #c82121;
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+/* END .home */
+/* line 2, ../sass/parts/_references.scss */
+.description_list {
+  /*display: inline;*/
+  float: left;
+  width: 470px;
+  margin: 0 5px;
+}
+/* line 5, ../sass/parts/_references.scss */
+.description_list li {
+  position: relative;
+  width: 100%;
+  clear: both;
+  font-size: 12px;
+  line-height: 1.5;
+}
+/* line 12, ../sass/parts/_references.scss */
+.description_list li span {
+  float: left;
+  color: #666666;
+  padding-right: 5px;
+}
+/* line 18, ../sass/parts/_references.scss */
+.description_list li strong {
+  color: #222222;
+}
+/* line 21, ../sass/parts/_references.scss */
+.description_list li li {
+  display: block;
+}
+/* line 24, ../sass/parts/_references.scss */
+.description_list li li:before {
+  content: '- ';
+}
+
+/* line 30, ../sass/parts/_references.scss */
+.description_list.part2 {
+  /*display: inline;*/
+  float: left;
+  width: 470px;
+  margin: 0 5px;
+}
+
+/* Projet */
+/* line 36, ../sass/parts/_references.scss */
+.photos_list {
+  margin: 10px 0;
+}
+/* line 39, ../sass/parts/_references.scss */
+.photos_list li {
+  /*display: inline;*/
+  float: left;
+  width: 310px;
+  margin: 0 5px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid 1px #fff;
+  -webkit-transition: background 0.1s ease-in, color 0.2s ease-out;
+  -moz-transition: background 0.1s ease-in, color 0.2s ease-out;
+  -o-transition: background 0.1s ease-in, color 0.2s ease-out;
+  transition: background 0.1s ease-in, color 0.2s ease-out;
+}
+/* line 47, ../sass/parts/_references.scss */
+.photos_list li article {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 52, ../sass/parts/_references.scss */
+.photos_list li .title {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: rgba(200, 33, 33, 0.8);
+  color: white;
+  font-family: "Scada", Arial, sans-serif;
+  text-transform: uppercase;
+  z-index: 999;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  font-weight: bold;
+}
+/* line 68, ../sass/parts/_references.scss */
+.photos_list li .title h2 {
+  position: absolute;
+  bottom: 14px;
+  right: 12px;
+  width: 218px;
+  font-size: 24px;
+  line-height: 28px;
+}
+/* line 77, ../sass/parts/_references.scss */
+.photos_list li .title span {
+  display: block;
+  margin: 28px 0 0 26px;
+  font-size: 48px;
+}
+/* line 84, ../sass/parts/_references.scss */
+.photos_list li img {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+}
+/* line 90, ../sass/parts/_references.scss */
+.photos_list li:hover .title {
+  opacity: 1;
+}
+/* line 93, ../sass/parts/_references.scss */
+.photos_list li:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 105, ../sass/parts/_references.scss */
+.projet .description .title {
+  position: relative;
+  float: left;
+  /*display: inline;*/
+  float: left;
+  width: 950px;
+  margin: 0 5px;
+  margin: 36px 0 26px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #9d9e9e;
+}
+/* line 113, ../sass/parts/_references.scss */
+.projet .description .title > span {
+  float: left;
+  font-family: "Scada", Arial, sans-serif;
+  font-size: 48px;
+  color: #222222;
+}
+/* line 119, ../sass/parts/_references.scss */
+.projet .description .title > h2 {
+  float: left;
+  margin-left: 22px;
+  padding-top: 4px;
+  font-family: "Scada", Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+/* line 129, ../sass/parts/_references.scss */
+.projet .description .pagination_back {
+  position: absolute;
+  right: 0;
+}
+/* line 133, ../sass/parts/_references.scss */
+.projet .description .pagination_back li {
+  float: left;
+  padding-top: 24px;
+}
+/* line 136, ../sass/parts/_references.scss */
+.projet .description .pagination_back li:first-child a {
+  padding-left: 0;
+  padding-right: 10px;
+}
+/* line 141, ../sass/parts/_references.scss */
+.projet .description .pagination_back a {
+  display: block;
+  padding-left: 10px;
+}
+/* line 145, ../sass/parts/_references.scss */
+.projet .description .pagination_back li, .projet .description .pagination_back a {
+  color: #222222;
+  font-family: "Scada", Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* line 157, ../sass/parts/_references.scss */
+.antiscroll-wrap {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 163, ../sass/parts/_references.scss */
+.antiscroll-scrollbar {
+  background: white;
+  -webkit-box-shadow: 0 0 1px #fff;
+  -moz-box-shadow: 0 0 1px #fff;
+  box-shadow: 0 0 1px #fff;
+  position: absolute;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: linear 300ms opacity;
+  -moz-transition: linear 300ms opacity;
+  -o-transition: linear 300ms opacity;
+}
+
+/* line 176, ../sass/parts/_references.scss */
+.antiscroll-scrollbar-shown {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+/* line 181, ../sass/parts/_references.scss */
+.antiscroll-scrollbar-horizontal {
+  height: 7px;
+  margin-left: 2px;
+  bottom: 2px;
+  left: 0;
+  opacity: 0 !important;
+}
+
+/* line 189, ../sass/parts/_references.scss */
+.antiscroll-scrollbar-vertical {
+  width: 10px;
+  margin-top: 15px;
+  right: 0px;
+  top: 0;
+  cursor: pointer;
+  opacity: 1 !important;
+}
+
+/* line 198, ../sass/parts/_references.scss */
+.antiscroll-inner {
+  overflow: scroll;
+}
+
+/* line 202, ../sass/parts/_references.scss */
+.antiscroll-inner::-webkit-scrollbar, .antiscroll-inner::scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* END .projet */
+/* line 1, ../sass/parts/_references2.scss */
+.photos_list2 {
+  margin: 10px 0;
+  float: left;
+  /* -- make sure to declare a default for every property that you want animated -- */
+  /* -- general styles, including Y axis rotation -- */
+  /* -- X axis rotation for click panel -- */
+  /* -- cosmetics -- */
+}
+/* line 5, ../sass/parts/_references2.scss */
+.photos_list2 .panel {
+  float: left;
+  width: 310px;
+  height: 200px;
+  margin: 5px;
+  position: relative;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+}
+/* line 16, ../sass/parts/_references2.scss */
+.photos_list2 .panel .front {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 0;
+  -webkit-transform: rotateX(0deg) rotateY(0deg) preserve-3d;
+  -moz-transform: rotateX(0deg) rotateY(0deg) preserve-3d;
+  -ms-transform: rotateX(0deg) rotateY(0deg) preserve-3d;
+  -o-transform: rotateX(0deg) rotateY(0deg) preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg) preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 36, ../sass/parts/_references2.scss */
+.photos_list2 .panel.flip .front {
+  z-index: 900;
+  border-color: #eee;
+  background: lightpink;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 44, ../sass/parts/_references2.scss */
+.photos_list2 .panel .back {
+  height: 100%;
+  width: 100%;
+  z-index: 800;
+  border: 1px solid #ccc;
+  background-color: white;
+  background: rgba(200, 33, 33, 0.8);
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.6);
+  -webkit-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotateY(-180deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 64, ../sass/parts/_references2.scss */
+.photos_list2 .panel.flip .back {
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(200, 33, 33, 0.8);
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -ms-transform: rotateX(0deg) rotateY(0deg);
+  -o-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+/* line 75, ../sass/parts/_references2.scss */
+.photos_list2 .click .front {
+  cursor: pointer;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+/* line 79, ../sass/parts/_references2.scss */
+.photos_list2 .click.flip .front {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+/* line 82, ../sass/parts/_references2.scss */
+.photos_list2 .click .back {
+  cursor: pointer;
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
+/* line 86, ../sass/parts/_references2.scss */
+.photos_list2 .click.flip .back {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+/* line 91, ../sass/parts/_references2.scss */
+.photos_list2 .panel.flip .action {
+  display: none;
+}
+/* line 93, ../sass/parts/_references2.scss */
+.photos_list2 .title {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 200px;
+  background: rgba(200, 33, 33, 0.8);
+  color: white;
+  font-family: "Scada", Arial, sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  font-weight: bold;
+}
+/* line 106, ../sass/parts/_references2.scss */
+.photos_list2 .title h2 {
+  position: absolute;
+  bottom: 14px;
+  right: 12px;
+  width: 218px;
+  font-size: 24px;
+  line-height: 28px;
+}
+/* line 115, ../sass/parts/_references2.scss */
+.photos_list2 .title span {
+  display: block;
+  margin: 28px 0 0 26px;
+  font-size: 48px;
+}
+/* line 122, ../sass/parts/_references2.scss */
+.photos_list2 .back img {
+  position: absolute;
+  z-index: -1;
+}
+/* line 127, ../sass/parts/_references2.scss */
+.photos_list2 li {
+  display: inline;
+}
+
+/*Popin*/
+/* line 3, ../sass/parts/_popin.scss */
+#popin {
+  width: 620px;
+  float: left;
+  padding: 15px;
+  background: #e5e5e5;
+}
+
+/* END #popin */
