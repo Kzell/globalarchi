@@ -3,7 +3,7 @@ Contributors: momo360modena
 Donate link: http://www.beapi.fr/donate/
 Tags: custom, post types, cms, post type, archive, view, permalink, rewriting, rewrite
 Requires at least: 3.1
-Stable tag: 3.4
+Stable tag: 3.4.1
 Tested up to: 3.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,6 +53,9 @@ You must install a plugin for managing roles and permissions as:
 
 == Changelog ==
 
+* Version 3.4.1 : 
+	* Change default position on menu (used 30)
+	* Fix default icons, put FALSE
 * Version 3.4 :
 	* Add export PHP feature
 	* Mark as compatible with WP 3.4.1

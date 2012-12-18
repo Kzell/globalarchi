@@ -63,7 +63,7 @@ class SimpleCustomTypes_Admin {
 			// 'register_meta_box_cb', not proposed because it needs a PHP function.
 			'taxonomies' 			=> array(),
 			'show_ui' 				=> 1,
-			'menu_position' 		=> 25,
+			'menu_position' 		=> 30,
 			'menu_icon' 			=> '',
 			'custom_role_checkbox'	=> '',
 			'custom_role'			=> '',

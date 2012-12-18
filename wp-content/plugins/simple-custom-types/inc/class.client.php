@@ -96,6 +96,11 @@ class SimpleCustomTypes_Client {
 				$custom_type['taxonomies'] = array();
 			}
 		}
+
+		// Icons ?
+		if ( empty($custom_type['menu_icon']) ) {
+			$custom_type['menu_icon'] = false;
+		}
 		
 		// Build args for register function
 		$args = array(
