@@ -6,18 +6,20 @@
 
 		$('select').on('change',function(){
 			date = $('#order_date').find('option:selected').attr('value');
-			architecte = $('#choose_architecte').find('option:selected').attr('value');
+			architecte = $('#order_architecte').find('option:selected').attr('value');
+			country = $('#order_country').find('option:selected').attr('value');
 
-			referencesAjax(date, architecte);
+			referencesAjax(date, architecte, country);
 		});
 
-		function referencesAjax(dateOrder, whereArchitecte){
+		function referencesAjax(dateOrder, whereArchitecte, whereCountry){
 			$.ajax({
 			  	url: templateDir + '/loopHandler.php',
 			  	type: "POST",
 			  	data : {
 			  		order : dateOrder,
-			  		architecte : whereArchitecte
+			  		architecte : whereArchitecte,
+			  		country : whereCountry
 			  	},
 			  	beforeSend : function(){
 			  		$('.loader').css('display','block');
@@ -40,7 +42,7 @@
 	$posts = $query->posts;
 	$arrayArchitectes = array();
 
-	echo '<select name="architectes" id="choose_architecte">';
+	echo '<select name="architectes" id="order_architecte">';
 	echo '<option value="" selected>Tous</option>';
 
 	foreach ($posts as $post){
@@ -60,7 +62,7 @@
 		ORDER BY meta_value ASC'
 	);
 
-	echo '<select name="country" id="choose_country">';
+	echo '<select name="country" id="order_country">';
 	echo '<option value="" selected>Tous</option>';
 
 	foreach ($countries as $country){
@@ -69,7 +71,7 @@
 	echo '</select>';
 ?>
 
-<select name="orderby" id="order_date">
+<select name="date" id="order_date">
 	<option value="desc" selected>Décroissant</option>
 	<option value="asc">Croissant</option>
 </select>

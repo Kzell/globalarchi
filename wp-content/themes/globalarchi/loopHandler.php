@@ -8,10 +8,15 @@
 		$order = $_POST['order'];
 	}
 
-	$whereArchitecte = '';
+	$metaQuery = array();
+	if( isset($_POST['country']) && !empty($_POST['country'])){
+		array_push($metaQuery, array('key' => 'country', 'value' => $_POST['country'], 'compare' => '='));
+	}
+
 	$valid = true;
+	$postArchitecte = '';
 	if(isset($_POST['architecte']) && !empty($_POST['architecte'])){
-		$whereArchitecte = $_POST['architecte'];
+		$postArchitecte = $_POST['architecte'];
 		$valid = false;
 	}
 
@@ -20,27 +25,33 @@
 			'post_type' => 'references',
 			'orderby' => 'date',
 			'order' => $order,
-			'posts_per_page' => -1
+			'posts_per_page' => -1,
+			'meta_query' => $metaQuery
 		)
 	);
 
 	$posts = $query->posts;
 
+	//echo '<pre>';
+	//var_dump($query);
+
+
 	echo '<ul>';
 	foreach ($posts as $post){
-
 		//Check architecte
-		$architectes = get_field('architecte');
+		$check = $valid;
 
-		foreach ($architectes as $architecte) {
-			$name = $architecte->post_title;
+		if(!$valid){
+			$architectes = get_field('architecte');
 
-			if($name == $whereArchitecte){
-				$valid = true;
+			foreach ($architectes as $architecte) {
+				if($postArchitecte == $architecte->post_title){
+					$check = true;
+				}
 			}
 		}
-
-		if($valid){
+		
+		if($check){
 			?>
 				<li>
 					<a href="<?php the_permalink(); ?>">
