@@ -1,0 +1,59 @@
+/* Guidelines - documentation */
+
+/* DON 'T INCLUDE IN STYLE.CSS */
+
+/*--------------------------------*/
+
+
+// - Background image -
+//background: image-url('bg-header.png') repeat-x 0 0;
+
+// - Background linear gradient -
+//@include background(linear-gradient(top, #5c5c5c 0%, #383838 100%));	
+
+// - Lighten + Linear gradient -
+//@include background(linear-gradient(top, lighten(#5c5c5c, 7%) 0%, lighten(#383838, 5%) 100%));
+
+// - Lighten + Linear gradient + image -
+//@include background(image-url("sprite.png") no-repeat -464px -380px, linear-gradient(top, lighten(#388fca, 7%) 0%, lighten(#1c5ead, 5%) 100%));
+
+// - Mix colors -
+//background-color : mix(#5c5c5c, #383838);
+
+// - Opacity -
+//@include opacity(0.5);
+
+// - Border radius -
+//@include border-radius(0px 4px 4px 4px);
+
+// - Box shadow -
+//@include box-shadow(#bdbdbd 0 1px 8px 1px);
+
+// - Text shadow -
+//@include text-shadow(#000 0 -1px 1px);
+
+// - Font px -> em (here:17px with 14px for base) 
+// - works with line-height & letter-spacing -
+//font:em(17px)/14px $font-titles;		
+		
+
+
+// - Before content -
+//&:before { content : '› ';  }
+	
+// Sprite background position -> 'à tester'	
+//background:sprite(-105px,11px);	
+		
+// - Fluid Grid -
+//@include column(5);
+	
+// - Container block + clearfix -	
+//@include container();	
+	
+	
+	
+// - Pie element include (for HTML5 on old browsers) -
+//@include pie-element();
+
+
+/* END Guidelines - documentation */

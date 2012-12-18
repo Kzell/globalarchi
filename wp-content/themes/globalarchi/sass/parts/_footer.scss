@@ -1,0 +1,33 @@
+/*Footer*/				
+
+footer{
+	clear:both;	
+	position:fixed;
+	bottom:-36px;
+	width:100%;
+	padding:10px 0;
+	background:$light_black;
+	
+	ul{float:right;}
+	li{
+		float:left;
+		margin-left:20px;
+		
+		&:first-child{
+			margin-left:0;
+		}
+	}
+	a{
+		color:$white;
+		font-size:12px;
+		font-weight:bold;
+	}
+	strong{
+		float:left;
+		margin-left:10%;
+		font-size:12px;
+		color:$grey;
+	}
+}
+
+/* END footer*/

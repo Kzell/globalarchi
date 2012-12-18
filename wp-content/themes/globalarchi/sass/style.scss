@@ -1,0 +1,79 @@
+/* Style.css */
+
+@charset "UTF-8"; 
+
+//Colors
+$white: #ffffff;
+$black: #000000;
+$light_black: #222222;
+$grey: #666666;
+$red: #c82121;
+
+
+// Typographie
+$font-titles  : "Scada", Arial, sans-serif;
+$font-default : Arial, Helvetica, 'Sans Serif';
+
+// CSS3Pie
+@import "compass/css3/pie";		
+$pie-behavior: url("/Projets/Default/htc/PIE.php");
+$pie-base-class: pie-element;
+
+
+// Modules
+@import "modules/reset";
+@import "compass/css3";
+@import "modules/mixins";
+@import "modules/grid";
+@import "modules/fonts";
+@import "modules/components";
+
+
+// Global
+
+//Animation Transition : OPACITY
+//html{opacity:0}
+
+body{
+	font-family:$font-default;
+	background:image-url('bg_pattern.jpg')repeat 0 0 #fff;
+	position:relative;
+	overflow:hidden;
+	top:9999px;
+}
+
+.wrapper{
+	width:970px;
+	margin:0 auto;
+}
+
+a{
+	color:#2B77BC;
+	text-decoration:none;
+	@include transition(background-color 0.1s ease-in, color 0.2s ease-out);
+}
+input[type="submit"], .btn {
+	cursor:pointer;
+}
+input[type="text"],
+input[type="search"],
+input[type="email"]{line-height:20px;}
+
+
+/*BOUTONS*/
+
+
+.hide {
+	display: none;
+}
+
+/*IMPORT FILES*/
+
+@import "parts/header"; //header
+@import "parts/footer"; //footer
+@import "parts/home"; // home
+@import "parts/references"; //references
+@import "parts/references2"; //references2
+@import "parts/popin"; // popin login, popin mentions...
+
+
