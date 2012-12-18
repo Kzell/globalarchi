@@ -214,20 +214,10 @@ header {
   border-top: solid 1px rgba(0, 0, 0, 0.2);
 }
 /* line 11, ../sass/parts/_header.scss */
-header #logo {
-  float: left;
-  margin-left: 10%;
-}
-/* line 15, ../sass/parts/_header.scss */
-header #logo a {
-  display: block;
-  padding: 16px 0;
-}
-/* line 20, ../sass/parts/_header.scss */
 header #search_form {
   float: right;
 }
-/* line 24, ../sass/parts/_header.scss */
+/* line 15, ../sass/parts/_header.scss */
 header nav {
   float: left;
   margin-left: 50%;
@@ -235,36 +225,36 @@ header nav {
   padding: 16px 0;
   height: 100%;
 }
-/* line 31, ../sass/parts/_header.scss */
+/* line 22, ../sass/parts/_header.scss */
 header nav .menu {
   float: left;
 }
-/* line 34, ../sass/parts/_header.scss */
+/* line 25, ../sass/parts/_header.scss */
 header nav .menu li {
   float: left;
   margin-right: 40px;
 }
-/* line 38, ../sass/parts/_header.scss */
+/* line 29, ../sass/parts/_header.scss */
 header nav .menu li a {
   color: #222222;
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 45, ../sass/parts/_header.scss */
+/* line 36, ../sass/parts/_header.scss */
 header nav .menu li a:hover, header nav .menu li a:active, header nav .menu li a.active {
   color: #c82121;
 }
-/* line 52, ../sass/parts/_header.scss */
+/* line 43, ../sass/parts/_header.scss */
 header #lang_sel {
   float: left;
 }
-/* line 55, ../sass/parts/_header.scss */
+/* line 46, ../sass/parts/_header.scss */
 header #btn_footer {
   float: left;
   height: 33px;
   position: relative;
 }
-/* line 60, ../sass/parts/_header.scss */
+/* line 51, ../sass/parts/_header.scss */
 header #btn_footer a {
   width: 20px;
   height: 18px;
@@ -273,7 +263,7 @@ header #btn_footer a {
   bottom: 0px;
   right: 0px;
 }
-/* line 70, ../sass/parts/_header.scss */
+/* line 61, ../sass/parts/_header.scss */
 header .btn {
   /*default color*/
   background-color: #4a4a4a;
@@ -341,6 +331,20 @@ footer strong {
 /* END footer*/
 /* Home */
 /* line 4, ../sass/parts/_home.scss */
+.home #logo {
+  /*display: inline;*/
+  float: left;
+  width: 390px;
+  margin: 0 5px;
+  margin-left: 10%;
+}
+/* line 8, ../sass/parts/_home.scss */
+.home #logo a {
+  display: block;
+  padding: 32px;
+  background: #fff;
+}
+/* line 14, ../sass/parts/_home.scss */
 .home .bg_fullscreen {
   width: 100%;
   position: fixed;
@@ -348,13 +352,13 @@ footer strong {
   left: 0;
   z-index: -1;
 }
-/* line 11, ../sass/parts/_home.scss */
+/* line 21, ../sass/parts/_home.scss */
 .home .fullscreen_pattern {
   position: absolute;
   width: 100%;
   background: url('../images/design/fullscreen_pattern.png?1353071957') repeat 0 0 transparent;
 }
-/* line 17, ../sass/parts/_home.scss */
+/* line 27, ../sass/parts/_home.scss */
 .home .description_projet {
   width: 350px;
   height: 280px;
@@ -367,14 +371,14 @@ footer strong {
   position: absolute;
   opacity: 0;
 }
-/* line 29, ../sass/parts/_home.scss */
+/* line 39, ../sass/parts/_home.scss */
 .home .description_projet h2 {
   font-size: 30px;
   font-family: "Scada", Arial, sans-serif;
   color: #222222;
   line-height: 1.2;
 }
-/* line 36, ../sass/parts/_home.scss */
+/* line 46, ../sass/parts/_home.scss */
 .home .description_projet #keywords {
   color: #c82121;
   margin: 20px 0;
