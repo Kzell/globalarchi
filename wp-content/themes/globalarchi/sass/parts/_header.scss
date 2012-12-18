@@ -16,7 +16,6 @@ header{
 		float:left;
 		margin-left:50%;
 		position:relative;
-		padding:16px 0;
 		height:100%;
 
 		.menu{
@@ -27,14 +26,18 @@ header{
 				margin-right:40px;
 
 				a{
+					display: block;
+					padding:20px 16px 13px 13px;
 					color:$light_black;
+					font-family:$font-titles;
 					font-size:14px;
 					text-transform: uppercase;
 					
 					&:hover,
 					&:active,
 					&.active{
-						color:$red;
+						background-color:$light_black;
+						color:#fff;
 					}
 				}
 			}

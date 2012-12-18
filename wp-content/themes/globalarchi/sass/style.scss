@@ -42,9 +42,13 @@ body{
 	top:9999px;
 }
 
-.wrapper{
-	width:970px;
-	margin:0 auto;
+#wrapper{
+	@include column(12);
+	float:none;
+	margin:42px auto 0;
+}
+section{
+	clear:both;
 }
 
 a{

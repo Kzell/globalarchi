@@ -6,7 +6,8 @@
 	<title>Global Archi</title>
 
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory');?>/css/style.css" />
-
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.bg-resize.js"> </script>
