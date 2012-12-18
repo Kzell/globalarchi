@@ -21,12 +21,25 @@
 			  		architecte : whereArchitecte,
 			  		country : whereCountry
 			  	},
+			  	dataType: "json",
 			  	beforeSend : function(){
 			  		$('.loader').css('display','block');
 			  	},
 			  	success: function(response){
+
 			  		$('.loader').css('display','none');
-			        $('#results').html(response);
+
+			  		$('#results').empty();
+
+			  		$.each(response, function(value, key) {
+
+			  			$li = $('<li>');
+			  			$a = $('<a>').attr('href',key[1]).html(key[0]);
+					    $('#results').append($li.append($a));
+					});
+
+			  		
+			        //$('#results').html(response);
 			    },
 			    error: function(response){
 			    	$('.loader').css('display','none');
@@ -84,8 +97,8 @@
 
 	<br/><br/>
 
-	<div id="results"></div>
-	
+	<ul id="results"></ul>
+
 </div>
 
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <?php
 	// Our include  
 	define('WP_USE_THEMES', false);  
-	require_once('../../../wp-load.php');  
+	require_once('../../../wp-load.php');
 
 	$order = 'desc';
 	if(isset($_POST['order'])){
@@ -32,11 +32,8 @@
 
 	$posts = $query->posts;
 
-	//echo '<pre>';
-	//var_dump($query);
-
-
-	echo '<ul>';
+	$arraySend = array();
+	//echo '<ul>';
 	foreach ($posts as $post){
 		//Check architecte
 		$check = $valid;
@@ -52,6 +49,11 @@
 		}
 		
 		if($check){
+			$title = get_the_title();
+			$permalink = get_permalink();
+
+			array_push($arraySend, array($title, $permalink));
+			/*
 			?>
 				<li>
 					<a href="<?php the_permalink(); ?>">
@@ -59,7 +61,11 @@
 					</a>
 				</li>
 			<?php
+			*/
 		}
 	}
-	echo '</ul>';
+	//echo '</ul>';
+
+
+	echo json_encode($arraySend);
 ?>
