@@ -25,6 +25,6 @@
 			<nav id="access" role="navigation">
 				<?php wp_nav_menu( array('menu' => 'menu_header' )); ?>
 			</nav>
-			<?php do_action('icl_language_selector'); ?>
+			<?php languages_list_footer(); ?>
 		</div>
 	</header>
