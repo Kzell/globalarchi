@@ -95,14 +95,14 @@ html {
   float: left;
   margin-top: 14px;
   padding: 7px 6px 7px 20px;
-  background: url('../images/design/sprite.png?1355940462') no-repeat 8px 8px #222222;
+  background: url('../images/design/sprite.png?1355953403') no-repeat 8px 8px #222222;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
 }
 /* line 18, ../sass/modules/_components.scss */
 .read_more:hover, .read_more:active {
-  background: url('../images/design/sprite.png?1355940462') no-repeat 8px 8px #090909;
+  background: url('../images/design/sprite.png?1355953403') no-repeat 8px 8px #090909;
 }
 
 /* line 27, ../sass/modules/_components.scss */
@@ -110,14 +110,14 @@ html {
   float: left;
   margin-top: 30px;
   padding: 6px 8px 6px 20px;
-  background: url('../images/design/sprite.png?1355940462') no-repeat 8px 8px #c82121;
+  background: url('../images/design/sprite.png?1355953403') no-repeat 8px 8px #c82121;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
 }
 /* line 38, ../sass/modules/_components.scss */
 .visit:hover, .visit:active {
-  background: url('../images/design/sprite.png?1355940462') no-repeat 8px 8px #9c1a1a;
+  background: url('../images/design/sprite.png?1355953403') no-repeat 8px 8px #9c1a1a;
 }
 
 /*@mixin btn-dark-grey{
@@ -367,7 +367,7 @@ header #btn_footer {
 header #btn_footer a {
   width: 20px;
   height: 18px;
-  background: url('../images/design/sprite.png?1355940462') no-repeat 5px -395px #222222;
+  background: url('../images/design/sprite.png?1355953403') no-repeat 5px -395px #222222;
   -webkit-border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -ms-border-radius: 10px 10px 0px 0px;
@@ -708,11 +708,11 @@ footer strong {
   min-height: 274px;
   text-indent: -9999px;
   color: transparent;
-  background: url('../images/design/sprite.png?1355940462') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355953403') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
 }
 /* line 143, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference.opened {
-  background: url('../images/design/sprite.png?1355940462') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355953403') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
 }
 
 /* Page references */
@@ -732,16 +732,37 @@ footer strong {
 /* line 160, ../sass/parts/_references.scss */
 .references_list #logo .filters {
   float: right;
+  min-width: 400px;
+  paddind-top: 31px;
 }
-/* line 163, ../sass/parts/_references.scss */
+/* line 165, ../sass/parts/_references.scss */
+.references_list #logo .filters a {
+  float: left;
+  margin-top: 2px;
+  margin-left: 10px;
+  width: 18px;
+  height: 22px;
+  text-indent: -9999px;
+  color: transparent;
+}
+/* line 174, ../sass/parts/_references.scss */
+.references_list #logo .filters a.show_blocks {
+  width: 19px;
+  background: url('../images/design/sprite.png?1355953403') no-repeat -920px 0 transparent;
+}
+/* line 178, ../sass/parts/_references.scss */
+.references_list #logo .filters a.show_list {
+  background: url('../images/design/sprite.png?1355953403') no-repeat -800px 0 transparent;
+}
+/* line 183, ../sass/parts/_references.scss */
 .references_list #logo form {
   float: left;
 }
-/* line 167, ../sass/parts/_references.scss */
+/* line 187, ../sass/parts/_references.scss */
 .references_list .photos_list {
   margin: 10px 0;
 }
-/* line 170, ../sass/parts/_references.scss */
+/* line 190, ../sass/parts/_references.scss */
 .references_list .photos_list li {
   /*display: inline;*/
   float: left;
@@ -756,12 +777,12 @@ footer strong {
   -o-transition: background 0.1s ease-in, color 0.2s ease-out;
   transition: background 0.1s ease-in, color 0.2s ease-out;
 }
-/* line 178, ../sass/parts/_references.scss */
+/* line 198, ../sass/parts/_references.scss */
 .references_list .photos_list li article {
   height: 200px;
   overflow: hidden;
 }
-/* line 183, ../sass/parts/_references.scss */
+/* line 203, ../sass/parts/_references.scss */
 .references_list .photos_list li .title {
   position: absolute;
   width: 100%;
@@ -778,7 +799,7 @@ footer strong {
   transition: opacity 0.2s ease-in;
   font-weight: bold;
 }
-/* line 199, ../sass/parts/_references.scss */
+/* line 219, ../sass/parts/_references.scss */
 .references_list .photos_list li .title h2 {
   position: absolute;
   bottom: 14px;
@@ -787,13 +808,13 @@ footer strong {
   font-size: 24px;
   line-height: 28px;
 }
-/* line 208, ../sass/parts/_references.scss */
+/* line 228, ../sass/parts/_references.scss */
 .references_list .photos_list li .title span {
   display: block;
   margin: 28px 0 0 26px;
   font-size: 48px;
 }
-/* line 215, ../sass/parts/_references.scss */
+/* line 235, ../sass/parts/_references.scss */
 .references_list .photos_list li img {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -801,11 +822,11 @@ footer strong {
   transition: all 0.2s ease-in-out;
   z-index: -1;
 }
-/* line 221, ../sass/parts/_references.scss */
+/* line 241, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover .title {
   opacity: 1;
 }
-/* line 224, ../sass/parts/_references.scss */
+/* line 244, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -814,14 +835,14 @@ footer strong {
 }
 
 /* Scrollbar */
-/* line 242, ../sass/parts/_references.scss */
+/* line 262, ../sass/parts/_references.scss */
 .antiscroll-wrap {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
 
-/* line 248, ../sass/parts/_references.scss */
+/* line 268, ../sass/parts/_references.scss */
 .antiscroll-scrollbar {
   background: white;
   -webkit-box-shadow: 0 0 1px #fff;
@@ -835,13 +856,13 @@ footer strong {
   -o-transition: linear 300ms opacity;
 }
 
-/* line 261, ../sass/parts/_references.scss */
+/* line 281, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-shown {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* line 266, ../sass/parts/_references.scss */
+/* line 286, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-horizontal {
   height: 7px;
   margin-left: 2px;
@@ -850,7 +871,7 @@ footer strong {
   opacity: 0 !important;
 }
 
-/* line 274, ../sass/parts/_references.scss */
+/* line 294, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-vertical {
   width: 10px;
   margin-top: 15px;
@@ -860,12 +881,12 @@ footer strong {
   opacity: 1 !important;
 }
 
-/* line 283, ../sass/parts/_references.scss */
+/* line 303, ../sass/parts/_references.scss */
 .antiscroll-inner {
   overflow: scroll;
 }
 
-/* line 287, ../sass/parts/_references.scss */
+/* line 307, ../sass/parts/_references.scss */
 .antiscroll-inner::-webkit-scrollbar, .antiscroll-inner::scrollbar {
   width: 0;
   height: 0;

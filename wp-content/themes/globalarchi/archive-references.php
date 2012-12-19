@@ -101,8 +101,10 @@
 		
 		
 			<img src="<?php bloginfo('template_directory') ?>/images/spinner.gif" alt="loader" class="loader"/>
+			<a href="#" class="show_list">Affichage en liste</a>
+			<a href="#" class="show_blocks">Affichage en blocs</a>
 		</div><!--End filters-->
-		</div><!--End inner-->
+				</div><!--End inner-->
 	</section>
 <ul id="results"></ul>
 

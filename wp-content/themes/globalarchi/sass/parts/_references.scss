@@ -159,6 +159,26 @@
 		}
 		.filters{
 			float:right;
+			min-width:400px;
+			paddind-top:31px;
+			
+			a{
+				float:left;
+				margin-top:2px;
+				margin-left:10px;
+				width:18px;
+				height:22px;
+				text-indent:-9999px;
+				color:transparent;
+			
+				&.show_blocks{
+					width:19px;
+					background:image-url('sprite.png') no-repeat -920px 0 transparent;
+				}
+				&.show_list{
+					background:image-url('sprite.png') no-repeat -800px 0 transparent;
+				}
+			}
 		}
 		form{
 			float:left;
