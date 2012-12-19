@@ -733,7 +733,7 @@ footer strong {
 .references_list #logo .filters {
   float: right;
   min-width: 400px;
-  paddind-top: 31px;
+  padding-top: 31px;
 }
 /* line 165, ../sass/parts/_references.scss */
 .references_list #logo .filters a {
