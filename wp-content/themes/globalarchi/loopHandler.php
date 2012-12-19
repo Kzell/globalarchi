@@ -33,7 +33,7 @@
 	$posts = $query->posts;
 
 	$arraySend = array();
-	//echo '<ul>';
+
 	foreach ($posts as $post){
 		//Check architecte
 		$check = $valid;
@@ -53,19 +53,8 @@
 			$permalink = get_permalink();
 
 			array_push($arraySend, array($title, $permalink));
-			/*
-			?>
-				<li>
-					<a href="<?php the_permalink(); ?>">
-						<?php the_title(); ?>
-					</a>
-				</li>
-			<?php
-			*/
 		}
 	}
-	//echo '</ul>';
-
 
 	echo json_encode($arraySend);
 ?>

@@ -12,31 +12,70 @@
 				</h1>
 			</section>
 			<section id="references">
-				<?php if ( have_posts() ) : ?>
-				
-					<?php while( have_posts() ) : the_post(); ?>
-						<div class="description_projet">
-							<div class="inner">
-								<h2><?php the_title();?></h2>
-								<strong class="keywords">Keyword keyword keyword keyword</strong>
-								<img  alt="#" src="<?php bloginfo('template_directory');?>/images/visuals/photo_article2.jpg"/>
-								<p><?php the_content();?></p>
-								<a class="read_more" href="<?php the_permalink();?>">Voir le projet</a>
+
+				<?php
+					$query = new WP_Query( array( 'post_type' => 'references', 'posts_per_page' => 2));
+					$posts = $query->posts;
+
+					foreach( $posts as $post){
+						?>
+							<div class="description_projet">
+								<div class="inner">
+									<h2><?php the_title();?></h2>
+									<img  alt="#" src="<?php the_field('picture');?>"/>
+									<div id="content">
+										<ul class="description_list">
+											<li>
+												<span>Lieu : </span>
+												<strong><?php echo get_field('country').' - '.get_field('town'); ?></strong>
+											</li>
+											<li>
+												<span>Maîtrise d'Ouvrage : </span>
+												<strong>A voir avec le client.</strong>
+											</li>
+											<li>
+												<span>Architectes : </span>
+												<?php 
+													$architectes = get_field('architecte');
+													$archi = '';
+													for ($i=0; $i < sizeof($architectes); $i++) { 
+														//var_dump($architectes[$i]);
+														$archi .= '<a href="'.$architectes[$i]->guid.'">'.$architectes[$i]->post_title.'</a> - ';
+													}
+												?>
+												<strong><?php echo $archi; ?></strong>
+											</li>
+											<li>
+												<span>Surface : </span>
+												<strong><?php the_field('surface'); ?></strong>
+											</li>
+											<li>
+												<span>Montant travaux : </span>
+												<strong><?php the_field('price'); ?></strong>
+											</li>
+										</ul>
+										<a class="visit" href="<?php the_permalink();?>">Voir le projet</a>
+									</div>
+								</div>
 							</div>
-						</div>
-					<?php endwhile; ?>
-						
-				<?php endif; ?>
+						<?php
+					}
+				?>
 			</section><!--END References-->
 			<section id="news">
 				<div class="inner">
-					<h2>La ville fertile : une exposition à la Cité de l'Architecture</h2>
-					<span>12/01/13 - Par Aurélie</span>
+					<?php
+						$lastpost = get_posts( array( 'numberposts' => 1) );
+					?>
+
+					<h2><?php echo $lastpost[0]->post_title; ?></h2>
+					<span><?php echo $lastpost[0]->post_date; ?> - <?php echo $lastpost[0]->post_author; ?></span>
 					<img src="<?php bloginfo('template_directory');?>/images/visuals/photo_small.jpg" alt="" />
 					<div class="article_text">
-						<p>Description de l'actualité...</p>
+						<p><?php echo $lastpost[0]->post_content; ?></p>
 						<a class="read_more" href="<?php the_permalink();?>">Lire la suite</a>
 					</div>
+
 				</div>
 			</section><!--END News-->
 		</div><!--END Wrapper-->
