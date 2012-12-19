@@ -29,17 +29,28 @@
 
 			  		$('.loader').css('display','none');
 
-			  		$('#results').empty();
+			  		$('.photos_list').empty();
 
 			  		$.each(response, function(value, key) {
-
 			  			$li = $('<li>');
-			  			$a = $('<a>').attr('href',key[1]).html(key[0]);
-					    $('#results').append($li.append($a));
-					});
+			  			$a = $('<a>').attr('href',key[1]);
+			  			$article = $('<article>');
+			  			$div = $('<div>').addClass('title');
+			  			$img = $('<img>').attr('src',key[3]);
+			  			$span = $('<span>').html(key[2]);
+			  			$h2 = $('<h2>').html(key[0]);
 
-			  		
-			        //$('#results').html(response);
+					    $('.photos_list').append(
+					    	$li.append(
+					    		$a.append(
+					    			$article.append(
+					    				$div.append($span,$h2),
+					    				$img
+					    			)
+					    		)
+					    	)
+					    );
+					});
 			    },
 			    error: function(response){
 			    	$('.loader').css('display','none');
@@ -111,171 +122,7 @@
 
 <section id="main" class="box-wrap antiscroll-wrap">
 			<div id="content" class="box">
-				<ul class="photos_list antiscroll-inner">
-					<li>
-						<a href="<?php the_permalink() ?>">
-							<article>
-								<div class="title">
-									<span><?php echo get_field('date') ?></span>
-									<h2><?php the_title(); ?></h2>
-								</div><!--END .title-->
-								<img alt="#" src="<?php echo get_field('picture') ?>" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">												<span>02</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb2.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-																								<span>03</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb3.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-																							<span>04</span>				
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb4.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">												<span>05</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb5.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>06</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb6.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>07</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb1.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>08</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb2.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>09</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb3.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>10</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb4.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>11</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb5.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>12</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb6.jpg" />
-							</article>
-						</a>
-					</li>
-<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>13</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb1.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>14</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb2.jpg" />
-							</article>
-						</a>
-					</li>
-					<li>
-						<a href="projet.html">
-							<article>
-								<div class="title">
-									<span>15</span>
-									<h2>Direction régionale des impôts</h2>
-								</div><!--END .title-->
-								<img alt="#" src="images/visuals/photo_thumb3.jpg" />
-							</article>
-						</a>
-					</li>
-				</ul>
+				<ul class="photos_list antiscroll-inner"></ul>
 			</div><!--END #content-->
 		</section><!--END #main-->
 </div>
