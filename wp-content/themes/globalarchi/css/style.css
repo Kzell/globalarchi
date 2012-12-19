@@ -95,14 +95,14 @@ html {
   float: left;
   margin-top: 14px;
   padding: 7px 6px 7px 20px;
-  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #222222;
+  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #222222;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
 }
 /* line 18, ../sass/modules/_components.scss */
 .read_more:hover, .read_more:active {
-  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #090909;
+  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #090909;
 }
 
 /* line 27, ../sass/modules/_components.scss */
@@ -110,14 +110,14 @@ html {
   float: left;
   margin-top: 30px;
   padding: 6px 8px 6px 20px;
-  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #c82121;
+  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #c82121;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
 }
 /* line 38, ../sass/modules/_components.scss */
 .visit:hover, .visit:active {
-  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #9c1a1a;
+  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #9c1a1a;
 }
 
 /*@mixin btn-dark-grey{
@@ -366,33 +366,6 @@ footer strong {
 /* END footer*/
 /* Home */
 /* line 4, ../sass/parts/_home.scss */
-.home #logo {
-  float: left;
-  width: 100%;
-  margin-bottom: 2px;
-}
-/* line 9, ../sass/parts/_home.scss */
-.home #logo .inner {
-  /*display: inline;*/
-  float: left;
-  width: 430px;
-  margin: 0 1px;
-  margin-left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-/* line 14, ../sass/parts/_home.scss */
-.home #logo .inner h1 {
-  display: block;
-  padding: 32px;
-}
-/* line 18, ../sass/parts/_home.scss */
-.home #logo .inner span {
-  display: block;
-  font-size: 10px;
-  font-style: italic;
-  color: #222222;
-}
-/* line 26, ../sass/parts/_home.scss */
 .home .bg_fullscreen {
   width: 100%;
   position: fixed;
@@ -400,20 +373,20 @@ footer strong {
   left: 0;
   z-index: -1;
 }
-/* line 33, ../sass/parts/_home.scss */
+/* line 11, ../sass/parts/_home.scss */
 .home .fullscreen_pattern {
   position: absolute;
   top: 0;
   background: url('../images/design/fullscreen_pattern.png?1353071957') repeat 0 0 transparent;
 }
-/* line 38, ../sass/parts/_home.scss */
+/* line 16, ../sass/parts/_home.scss */
 .home h2 {
   font-size: 22px;
   font-family: "Scada", Arial, sans-serif;
   color: #222222;
   line-height: 1.2;
 }
-/* line 44, ../sass/parts/_home.scss */
+/* line 22, ../sass/parts/_home.scss */
 .home .description_projet {
   /*display: inline;*/
   float: left;
@@ -424,33 +397,33 @@ footer strong {
   opacity: 0;
   margin: 0;
 }
-/* line 51, ../sass/parts/_home.scss */
+/* line 29, ../sass/parts/_home.scss */
 .home .description_projet:first-child {
   margin: 0 2px 0 0;
 }
-/* line 55, ../sass/parts/_home.scss */
+/* line 33, ../sass/parts/_home.scss */
 .home .description_projet .inner {
   padding: 30px;
 }
-/* line 59, ../sass/parts/_home.scss */
+/* line 37, ../sass/parts/_home.scss */
 .home .description_projet strong.keywords {
   color: #666666;
   font-size: 12px;
   margin: 20px 0;
 }
-/* line 64, ../sass/parts/_home.scss */
+/* line 42, ../sass/parts/_home.scss */
 .home .description_projet img {
   float: left;
   margin: 20px 0 14px;
   width: 346px;
   height: 264px;
 }
-/* line 70, ../sass/parts/_home.scss */
+/* line 48, ../sass/parts/_home.scss */
 .home .description_projet p {
   color: #222222;
   font-size: 12px;
 }
-/* line 75, ../sass/parts/_home.scss */
+/* line 53, ../sass/parts/_home.scss */
 .home #news {
   /*display: inline;*/
   float: left;
@@ -460,11 +433,11 @@ footer strong {
   height: 206px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 81, ../sass/parts/_home.scss */
+/* line 59, ../sass/parts/_home.scss */
 .home #news .inner {
   padding: 30px;
 }
-/* line 84, ../sass/parts/_home.scss */
+/* line 62, ../sass/parts/_home.scss */
 .home #news span {
   float: left;
   width: 100%;
@@ -472,28 +445,57 @@ footer strong {
   font-size: 12px;
   margin: 0 0 20px;
 }
-/* line 91, ../sass/parts/_home.scss */
+/* line 69, ../sass/parts/_home.scss */
 .home #news img {
   clear: both;
   float: left;
   margin-right: 20px;
 }
-/* line 96, ../sass/parts/_home.scss */
+/* line 74, ../sass/parts/_home.scss */
 .home #news p {
   float: left;
   color: #222222;
   font-size: 12px;
 }
-/* line 101, ../sass/parts/_home.scss */
+/* line 79, ../sass/parts/_home.scss */
 .home #news .article_text {
   float: left;
 }
-/* line 104, ../sass/parts/_home.scss */
+/* line 82, ../sass/parts/_home.scss */
 .home #news a {
   margin-top: 24px;
 }
 
 /* END .home */
+/*Elements communs aux autres pages*/
+/* line 90, ../sass/parts/_home.scss */
+#logo {
+  float: left;
+  width: 100%;
+  margin-bottom: 2px;
+}
+/* line 95, ../sass/parts/_home.scss */
+#logo .inner {
+  /*display: inline;*/
+  float: left;
+  width: 430px;
+  margin: 0 1px;
+  margin-left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 100, ../sass/parts/_home.scss */
+#logo .inner h1 {
+  display: block;
+  padding: 32px;
+}
+/* line 104, ../sass/parts/_home.scss */
+#logo .inner span {
+  display: block;
+  font-size: 10px;
+  font-style: italic;
+  color: #222222;
+}
+
 /* line 2, ../sass/parts/_references.scss */
 .description_list {
   /*display: inline;*/
@@ -727,6 +729,72 @@ footer strong {
 }
 
 /* END .projet */
+/*Single-reference*/
+/* line 212, ../sass/parts/_references.scss */
+.single_reference #logo {
+  margin-top: 50px;
+  width: inherit;
+}
+/* line 215, ../sass/parts/_references.scss */
+.single_reference #logo .inner {
+  /*display: inline;*/
+  float: left;
+  width: 1150px;
+  margin: 0 1px;
+}
+/* line 218, ../sass/parts/_references.scss */
+.single_reference #logo .inner h1 {
+  display: block;
+  padding: 18px 18px 12px 28px;
+}
+/* line 222, ../sass/parts/_references.scss */
+.single_reference #logo .inner span {
+  display: block;
+  font-size: 10px;
+  font-style: italic;
+  color: #222222;
+}
+/* line 230, ../sass/parts/_references.scss */
+.single_reference #description_projet {
+  clear: left;
+  /*display: inline;*/
+  float: left;
+  width: 1150px;
+  margin: 0 1px;
+  height: 215px;
+  background: rgba(255, 255, 255, 0.9);
+}
+/* line 236, ../sass/parts/_references.scss */
+.single_reference #description_projet .title {
+  float: left;
+  padding: 18px 18px 12px 28px;
+}
+/* line 242, ../sass/parts/_references.scss */
+.single_reference #description_projet ul {
+  float: left;
+  padding: 18px 18px 12px;
+}
+/* line 247, ../sass/parts/_references.scss */
+.single_reference .banner_show_hide {
+  float: left;
+}
+/* line 250, ../sass/parts/_references.scss */
+.single_reference .btn_show_hide_description_reference {
+  float: left;
+  margin: 50px 0 0 1px;
+  min-height: 274px;
+  text-indent: -9999px;
+  color: transparent;
+}
+/* line 257, ../sass/parts/_references.scss */
+.single_reference .btn_show_hide_description_reference.on {
+  background: url('../images/design/sprite.png?1355924878') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
+}
+/* line 260, ../sass/parts/_references.scss */
+.single_reference .btn_show_hide_description_reference.off {
+  background: url('../images/design/sprite.png?1355924878') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
+}
+
 /* line 1, ../sass/parts/_references2.scss */
 .photos_list2 {
   margin: 10px 0;

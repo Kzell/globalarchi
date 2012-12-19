@@ -205,3 +205,60 @@
       }
 
 /* END .projet */ 
+
+/*Single-reference*/
+
+.single_reference{
+	#logo{		
+		margin-top:50px;
+		width:inherit;
+		.inner{	
+			@include column(16);
+
+			h1{
+				display:block;
+				padding:18px 18px 12px 28px;
+			}
+			span{
+				display:block;
+				font-size:10px;
+				font-style: italic;
+				color:$light_black;
+			}
+		}
+	}
+	#description_projet{
+		clear:left;
+		@include column(16);
+		height:215px;
+		background: rgba(255, 255, 255, 0.9);
+		
+		.title{
+			float:left;
+			padding:18px 18px 12px 28px;
+
+		}
+		
+		ul{
+			float:left;
+			padding:18px 18px 12px;
+		}
+	}
+	.banner_show_hide{
+		float:left;
+	}
+	.btn_show_hide_description_reference{
+		float:left;
+		margin:50px 0 0 1px;
+		min-height:274px;
+		text-indent:-9999px;
+		color:transparent;
+		
+		&.on{
+			background:image-url('sprite.png') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
+		}
+		&.off{
+			background:image-url('sprite.png') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
+		}
+	}
+}

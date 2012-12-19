@@ -1,28 +1,6 @@
 /* Home */ 
 
 .home{
-	#logo{
-		float:left;
-		width:100%;	
-		margin-bottom:2px;
-		
-		.inner{	
-			@include column(6);
-			margin-left:0;
-			background-color:rgba(255, 255, 255, 0.9);
-
-			h1{
-				display:block;
-				padding:32px;
-			}
-			span{
-				display:block;
-				font-size:10px;
-				font-style: italic;
-				color:$light_black;
-			}
-		}
-	}
 	.bg_fullscreen{
 		width:100%; //debug le fullscreen au chargement de page
 		position:fixed;
@@ -107,3 +85,27 @@
 	}
 }
 /* END .home */ 
+
+/*Elements communs aux autres pages*/
+#logo{
+	float:left;
+	width:100%;	
+	margin-bottom:2px;		
+		
+	.inner{	
+		@include column(6);
+		margin-left:0;
+		background-color:rgba(255, 255, 255, 0.9);
+
+		h1{
+			display:block;
+			padding:32px;
+		}
+		span{
+			display:block;
+			font-size:10px;
+			font-style: italic;
+			color:$light_black;
+		}
+	}
+}
