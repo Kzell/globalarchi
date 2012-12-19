@@ -1,18 +1,6 @@
 /* Home */ 
 
 .home{
-	.bg_fullscreen{
-		width:100%; //debug le fullscreen au chargement de page
-		position:fixed;
-		top:0;
-		left:0;
-		z-index:-1;
-	}
-	.fullscreen_pattern{
-		position: absolute;
-		top:0;
-		background:image-url('fullscreen_pattern.png')repeat 0 0 transparent;
-	}
 	h2{
 		font-size:22px;
 		font-family: $font-titles;
@@ -87,6 +75,19 @@
 /* END .home */ 
 
 /*Elements communs aux autres pages*/
+.bg_fullscreen{
+	width:100%; //debug le fullscreen au chargement de page
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+.fullscreen_pattern{
+	position: absolute;
+	top:0;
+	background:image-url('fullscreen_pattern.png')repeat 0 0 transparent;
+}
+
 #logo{
 	float:left;
 	width:100%;	

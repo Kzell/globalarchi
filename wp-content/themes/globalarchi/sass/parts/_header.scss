@@ -53,22 +53,20 @@ header{
 		float: left;
 	}
 	#btn_footer{
-			float:left;
-			height:33px;
-			position:relative;
+		position:absolute;
+		right:50px;
+		bottom:0;
+		height:33px;
 
-			a{
-				width:20px;
-				height:18px;
-				background: image-url('sprite_arrow_header.png') no-repeat 0 0;
-				position:absolute;
-				bottom:0px;
-				right:0px;
-			}
+		a{
+			width:20px;
+			height:18px;
+			background: image-url('sprite.png') no-repeat 5px -395px #000;
+			@include border-radius(10px 10px 0px 0px);
+			position:absolute;
+			bottom:0px;
+			right:0px;
 		}
-	
-	.btn{
-		@include button(#5c5c5c, #383838, none, 0 6px 6px 6px);
 	}
 }	
 

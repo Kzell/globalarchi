@@ -79,14 +79,14 @@ $(document).ready(function(){
 			$('footer').stop().animate({bottom:-36});
 
             //Arrow Top
-            $(this).css('background-position','0px 0px');
+            $(this).css('background-position',' 5px -395px');
 
   		}else{
   			$('header').stop().animate({bottom:36});
 			$('footer').stop().animate({bottom:0});
 
             //Arrow Down
-            $(this).css('background-position','0px -18px');
+            $(this).css('background-position',' 5px -272px');
   		}
   		$(this).toggleClass('opened');
   	});
