@@ -52,9 +52,10 @@ $(document).ready(function(){
     },function(){
         $(this).removeClass('flip');
     });
-});
 
-$(document).ready(function(){
+    $('#currentLangage').on('click',function(){
+        $(this).parent('#langages').toggleClass('opened');
+    });
 
     //Animation Transition Link
     $('a').on('click',function(){
@@ -100,13 +101,6 @@ $(document).ready(function(){
         $('.antiscroll-inner').css('height',heightReferences);
         $('.box-wrap').antiscroll().data('antiscroll');
     }
-    
-     /*
-     //Positionnements
-     headerNav_width_50 = $('header nav').width()/2;
-         $('header nav').css({'margin-left' : window_width /2 - headerNav_width_50 });
-     */
-
 });  
 
 

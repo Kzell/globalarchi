@@ -25,7 +25,10 @@
 			<nav id="access" role="navigation">
 				<?php wp_nav_menu( array('menu' => 'menu_header' )); ?>
 			</nav>
-			<?php languages_list_footer(); ?>
+			<?php 
+				languages_list_footer(); 
+				//do_action('icl_language_selector');
+			?>
 		</div>
 		<div id="btn_footer">
 			<a href="#" class="more_footer"></a><!--Link to show the footer-->

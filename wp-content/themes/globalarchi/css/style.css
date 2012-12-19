@@ -279,18 +279,67 @@ header nav .menu li a:hover, header nav .menu li a:active, header nav .menu li a
   background-color: #222222;
   color: #fff;
 }
-/* line 52, ../sass/parts/_header.scss */
+/* line 53, ../sass/parts/_header.scss */
+header #langages {
+  float: right;
+}
+/* line 56, ../sass/parts/_header.scss */
+header #langages #currentLangage {
+  font-family: "Scada", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #222;
+  padding: 20px 16px 13px 13px;
+  position: relative;
+  display: block;
+}
+/* line 65, ../sass/parts/_header.scss */
+header #langages #currentLangage span {
+  background: url('../images/design/sprite_arrow_langages.jpg?1355933738');
+  width: 13px;
+  height: 7px;
+  position: absolute;
+  background-position-y: 7px;
+  margin: 3px 10px;
+}
+/* line 76, ../sass/parts/_header.scss */
+header #langages.opened #currentLangage span {
+  background-position-y: 0px;
+}
+/* line 80, ../sass/parts/_header.scss */
+header #langages.opened ul {
+  display: block;
+}
+/* line 85, ../sass/parts/_header.scss */
+header #langages ul {
+  display: none;
+  position: absolute;
+}
+/* line 89, ../sass/parts/_header.scss */
+header #langages ul li a {
+  padding: 13px 28px 13px 13px;
+  color: #222;
+  background-color: #FFF;
+  bottom: 30px;
+  position: relative;
+}
+/* line 96, ../sass/parts/_header.scss */
+header #langages ul li a:hover {
+  color: #FFF;
+  background-color: #222;
+}
+/* line 105, ../sass/parts/_header.scss */
 header #lang_sel {
   float: left;
 }
-/* line 55, ../sass/parts/_header.scss */
+/* line 108, ../sass/parts/_header.scss */
 header #btn_footer {
   position: absolute;
   right: 50px;
   bottom: 0;
   height: 33px;
 }
-/* line 61, ../sass/parts/_header.scss */
+/* line 114, ../sass/parts/_header.scss */
 header #btn_footer a {
   width: 20px;
   height: 18px;

@@ -49,6 +49,59 @@ header{
 			}
 		}
 	}
+
+	#langages{
+		float:right;
+
+		#currentLangage{
+			font-family: "Scada", Arial, sans-serif;
+			font-size: 14px;
+			text-transform: uppercase;
+			color:#222;
+			padding: 20px 16px 13px 13px;
+			position: relative;
+			display: block;
+
+			span{
+				background: image-url('sprite_arrow_langages.jpg');
+				width:13px;
+				height:7px;
+				position: absolute;
+				background-position-y: 7px;
+				margin: 3px 10px;
+			}
+		}
+
+		&.opened {
+			#currentLangage span{
+				background-position-y: 0px;
+			}
+
+			ul{
+				display:block;
+			}
+		}
+
+		ul{
+			display:none;
+			position:absolute;
+			li{
+				a{
+					padding: 13px 28px 13px 13px;
+					color:#222;
+					background-color:#FFF;
+					bottom: 30px;
+					position: relative;
+
+					&:hover{
+						color:#FFF;
+						background-color:#222;
+					}
+				}
+			}
+		}
+	}
+
 	#lang_sel{
 		float: left;
 	}
