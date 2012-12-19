@@ -54,7 +54,7 @@ $(document).ready(function(){
     });
 
     $('#currentLangage').on('click',function(){
-        $(this).parent('#langages').toggleClass('opened');
+        $(this).parent('#langages').addClass('opened');
     });
 
     //Animation Transition Link
