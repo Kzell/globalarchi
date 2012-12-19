@@ -42,7 +42,7 @@ body{
 	top:9999px;
 }
 
-#wrapper{
+.wrapper{
 	@include column(12);
 	float:none;
 	margin:42px auto 0;

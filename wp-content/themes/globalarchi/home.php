@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div id="content" class="fullscreen_pattern">
-		<div id="wrapper">
+		<div class="wrapper">
 		
 			<section id="logo">
 				<h1>
