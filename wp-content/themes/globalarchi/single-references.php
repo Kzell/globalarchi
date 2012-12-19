@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+	<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/reference.js"></script>
 	<div id="wrapper" class="single_reference">
 		<div class="banner_show_hide">
 			<section id="logo">
@@ -11,7 +12,7 @@
 			</section>
 			<section id="description_projet">
 				<div class="title">
-					<h2><?php echo the_title() ?></h2>
+					<h2><?php echo the_title(); ?></h2>
 				</div>
 				<ul class="description_list">
 					<li>
@@ -45,6 +46,6 @@
 				</ul>
 			</section>
 		</div>
-		<a href="#" class="btn_show_hide_description_reference on">Afficher / Masquer</a>
+		<a href="#" class="btn_show_hide_description_reference opened">Afficher / Masquer</a>
 	</div>
 <?php get_footer(); ?>

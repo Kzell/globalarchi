@@ -220,7 +220,7 @@
 				padding:18px 18px 12px 28px;
 			}
 			span{
-				display:block;
+				display:block; 
 				font-size:10px;
 				font-style: italic;
 				color:$light_black;
@@ -238,7 +238,7 @@
 			padding:18px 18px 12px 28px;
 
 		}
-		
+	
 		ul{
 			float:left;
 			padding:18px 18px 12px;
@@ -253,12 +253,10 @@
 		min-height:274px;
 		text-indent:-9999px;
 		color:transparent;
+		background:image-url('sprite.png') no-repeat -462px 112px rgba(255, 255, 255, 0.9); 
 		
-		&.on{
+		&.opened{
 			background:image-url('sprite.png') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
-		}
-		&.off{
-			background:image-url('sprite.png') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
 		}
 	}
 }
