@@ -42,8 +42,9 @@
 														//var_dump($architectes[$i]);
 														$archi .= '<a href="'.$architectes[$i]->guid.'">'.$architectes[$i]->post_title.'</a> - ';
 													}
+
 												?>
-												<strong><?php echo $archi; ?></strong>
+												<strong><?php echo substr($archi,0,-2); ?></strong>
 											</li>
 											<li>
 												<span>Surface : </span>
