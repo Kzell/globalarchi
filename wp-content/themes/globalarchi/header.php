@@ -27,4 +27,7 @@
 			</nav>
 			<?php languages_list_footer(); ?>
 		</div>
+		<div id="btn_footer">
+			<a href="#" class="more_footer"></a><!--Link to show the footer-->
+		</div>
 	</header>

@@ -95,14 +95,14 @@ html {
   float: left;
   margin-top: 14px;
   padding: 7px 6px 7px 20px;
-  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #222222;
+  background: url('../images/design/sprite.png?1355926754') no-repeat 8px 8px #222222;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
 }
 /* line 18, ../sass/modules/_components.scss */
 .read_more:hover, .read_more:active {
-  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #090909;
+  background: url('../images/design/sprite.png?1355926754') no-repeat 8px 8px #090909;
 }
 
 /* line 27, ../sass/modules/_components.scss */
@@ -110,14 +110,14 @@ html {
   float: left;
   margin-top: 30px;
   padding: 6px 8px 6px 20px;
-  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #c82121;
+  background: url('../images/design/sprite.png?1355926754') no-repeat 8px 8px #c82121;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
 }
 /* line 38, ../sass/modules/_components.scss */
 .visit:hover, .visit:active {
-  background: url('../images/design/sprite.png?1355924878') no-repeat 8px 8px #9c1a1a;
+  background: url('../images/design/sprite.png?1355926754') no-repeat 8px 8px #9c1a1a;
 }
 
 /*@mixin btn-dark-grey{
@@ -285,44 +285,24 @@ header #lang_sel {
 }
 /* line 55, ../sass/parts/_header.scss */
 header #btn_footer {
-  float: left;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
   height: 33px;
-  position: relative;
 }
-/* line 60, ../sass/parts/_header.scss */
+/* line 61, ../sass/parts/_header.scss */
 header #btn_footer a {
   width: 20px;
   height: 18px;
-  background: url('../images/design/sprite_arrow_header.png?1353004266') no-repeat 0 0;
+  background: url('../images/design/sprite.png?1355926754') no-repeat 5px -395px black;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-/* line 70, ../sass/parts/_header.scss */
-header .btn {
-  /*default color*/
-  background-color: #4a4a4a;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5c5c5c), color-stop(100%, #383838));
-  background: -webkit-linear-gradient(top, #5c5c5c 0%, #383838 100%);
-  background: -moz-linear-gradient(top, #5c5c5c 0%, #383838 100%);
-  background: -o-linear-gradient(top, #5c5c5c 0%, #383838 100%);
-  -pie-background: linear-gradient(top, #5c5c5c 0%, #383838 100%);
-  background: linear-gradient(top, #5c5c5c 0%, #383838 100%);
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px 6px;
-  -ms-border-radius: 0 6px 6px 6px;
-  -o-border-radius: 0 6px 6px 6px;
-  border-radius: 0 6px 6px 6px;
-  border: none;
-}
-/* line 58, ../sass/modules/_components.scss */
-header .btn:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6e6e6e), color-stop(100%, #454545));
-  background: -webkit-linear-gradient(top, #6e6e6e 0%, #454545 100%);
-  background: -moz-linear-gradient(top, #6e6e6e 0%, #454545 100%);
-  background: -o-linear-gradient(top, #6e6e6e 0%, #454545 100%);
-  -pie-background: linear-gradient(top, #6e6e6e 0%, #454545 100%);
-  background: linear-gradient(top, #6e6e6e 0%, #454545 100%);
 }
 
 /* END header*/
@@ -788,11 +768,11 @@ footer strong {
 }
 /* line 257, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference.on {
-  background: url('../images/design/sprite.png?1355924878') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355926754') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
 }
 /* line 260, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference.off {
-  background: url('../images/design/sprite.png?1355924878') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355926754') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
 }
 
 /* line 1, ../sass/parts/_references2.scss */
