@@ -98,4 +98,14 @@ $(document).ready(function(){
         $('.antiscroll-inner').css('height',heightReferences);
         $('.box-wrap').antiscroll().data('antiscroll');
     }
+    
+     /*
+     //Positionnements
+     headerNav_width_50 = $('header nav').width()/2;
+         $('header nav').css({'margin-left' : window_width /2 - headerNav_width_50 });
+     */
+
 });  
+
+
+
