@@ -346,27 +346,13 @@ footer strong {
 /* END footer*/
 /* Home */
 /* line 4, ../sass/parts/_home.scss */
-.home .bg_fullscreen {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-/* line 11, ../sass/parts/_home.scss */
-.home .fullscreen_pattern {
-  position: absolute;
-  top: 0;
-  background: url('../images/design/fullscreen_pattern.png?1353071957') repeat 0 0 transparent;
-}
-/* line 16, ../sass/parts/_home.scss */
 .home h2 {
   font-size: 22px;
   font-family: "Scada", Arial, sans-serif;
   color: #222222;
   line-height: 1.2;
 }
-/* line 22, ../sass/parts/_home.scss */
+/* line 10, ../sass/parts/_home.scss */
 .home .description_projet {
   /*display: inline;*/
   float: left;
@@ -377,33 +363,33 @@ footer strong {
   opacity: 0;
   margin: 0;
 }
-/* line 29, ../sass/parts/_home.scss */
+/* line 17, ../sass/parts/_home.scss */
 .home .description_projet:first-child {
   margin: 0 2px 0 0;
 }
-/* line 33, ../sass/parts/_home.scss */
+/* line 21, ../sass/parts/_home.scss */
 .home .description_projet .inner {
   padding: 30px;
 }
-/* line 37, ../sass/parts/_home.scss */
+/* line 25, ../sass/parts/_home.scss */
 .home .description_projet strong.keywords {
   color: #666666;
   font-size: 12px;
   margin: 20px 0;
 }
-/* line 42, ../sass/parts/_home.scss */
+/* line 30, ../sass/parts/_home.scss */
 .home .description_projet img {
   float: left;
   margin: 20px 0 14px;
   width: 346px;
   height: 264px;
 }
-/* line 48, ../sass/parts/_home.scss */
+/* line 36, ../sass/parts/_home.scss */
 .home .description_projet p {
   color: #222222;
   font-size: 12px;
 }
-/* line 53, ../sass/parts/_home.scss */
+/* line 41, ../sass/parts/_home.scss */
 .home #news {
   /*display: inline;*/
   float: left;
@@ -413,11 +399,11 @@ footer strong {
   height: 206px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 59, ../sass/parts/_home.scss */
+/* line 47, ../sass/parts/_home.scss */
 .home #news .inner {
   padding: 30px;
 }
-/* line 62, ../sass/parts/_home.scss */
+/* line 50, ../sass/parts/_home.scss */
 .home #news span {
   float: left;
   width: 100%;
@@ -425,36 +411,52 @@ footer strong {
   font-size: 12px;
   margin: 0 0 20px;
 }
-/* line 69, ../sass/parts/_home.scss */
+/* line 57, ../sass/parts/_home.scss */
 .home #news img {
   clear: both;
   float: left;
   margin-right: 20px;
 }
-/* line 74, ../sass/parts/_home.scss */
+/* line 62, ../sass/parts/_home.scss */
 .home #news p {
   float: left;
   color: #222222;
   font-size: 12px;
 }
-/* line 79, ../sass/parts/_home.scss */
+/* line 67, ../sass/parts/_home.scss */
 .home #news .article_text {
   float: left;
 }
-/* line 82, ../sass/parts/_home.scss */
+/* line 70, ../sass/parts/_home.scss */
 .home #news a {
   margin-top: 24px;
 }
 
 /* END .home */
 /*Elements communs aux autres pages*/
-/* line 90, ../sass/parts/_home.scss */
+/* line 78, ../sass/parts/_home.scss */
+.bg_fullscreen {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 85, ../sass/parts/_home.scss */
+.fullscreen_pattern {
+  position: absolute;
+  top: 0;
+  background: url('../images/design/fullscreen_pattern.png?1353071957') repeat 0 0 transparent;
+}
+
+/* line 91, ../sass/parts/_home.scss */
 #logo {
   float: left;
   width: 100%;
   margin-bottom: 2px;
 }
-/* line 95, ../sass/parts/_home.scss */
+/* line 96, ../sass/parts/_home.scss */
 #logo .inner {
   /*display: inline;*/
   float: left;
@@ -463,12 +465,12 @@ footer strong {
   margin-left: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 100, ../sass/parts/_home.scss */
+/* line 101, ../sass/parts/_home.scss */
 #logo .inner h1 {
   display: block;
   padding: 32px;
 }
-/* line 104, ../sass/parts/_home.scss */
+/* line 105, ../sass/parts/_home.scss */
 #logo .inner span {
   display: block;
   font-size: 10px;
