@@ -15,7 +15,8 @@
 		var templateDir = "<?php bloginfo('template_directory') ?>";
 	</script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/scripts.js"></script>
-	
+	<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/antiscroll.js"></script>
+
 	<?php wp_head(); ?>
 	</head>
 
