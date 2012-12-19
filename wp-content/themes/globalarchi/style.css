@@ -948,8 +948,8 @@ footer strong {
   bottom: 14px;
   right: 12px;
   width: 218px;
-  font-size: 24px;
   line-height: 28px;
+  font-size: 24px;
 }
 /* line 115, ../sass/parts/_references2.scss */
 .photos_list2 .title span {
@@ -966,7 +966,7 @@ footer strong {
 .photos_list2 li {
   display: inline;
 }
-
+  
 /*Popin*/
 /* line 3, ../sass/parts/_popin.scss */
 #popin {
