@@ -111,16 +111,15 @@
 		</form>
 		
 		
-			<img src="<?php bloginfo('template_directory') ?>/images/spinner.gif" alt="loader" class="loader"/>
+			<img src="<?php bloginfo('template_directory') ?>/images/spinner.gif" alt="loader" class="loader" />
 			<a href="#" class="show_list">Affichage en liste</a>
 			<a href="#" class="show_blocks">Affichage en blocs</a>
 		</div><!--End filters-->
 				</div><!--End inner-->
 	</section>
-<ul id="results"></ul>
 
 
-<section id="main" class="box-wrap antiscroll-wrap">
+<section id="main" class="box-wrap antiscroll-wrap photos_list">
 			<div id="content" class="box">
 				<ul class="photos_list antiscroll-inner"></ul>
 			</div><!--END #content-->

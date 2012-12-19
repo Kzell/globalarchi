@@ -131,6 +131,12 @@
 			float:left;
 			padding:18px 18px 12px 28px;
 
+			h2{
+				color:$light_black;
+				text-transform: uppercase;
+				font-family: $font-titles;
+				font-size:24px;
+			}
 		}
 	
 		ul{
@@ -202,6 +208,7 @@
 			margin-bottom:5px;
 			border:solid 1px #fff;		
 			@include transition(background .1s ease-in, color .2s ease-out);
+			list-style:none;
 				
 			article{
 				height:200px;
