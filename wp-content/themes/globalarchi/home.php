@@ -4,10 +4,12 @@
 		<div class="wrapper">
 		
 			<section id="logo">
-				<h1>
-					<img src="<?php bloginfo('template_directory');?>/images/design/logo.png" alt="" />
-					<span><?php bloginfo( 'description' ); ?></span>
-				</h1>
+				<div class="inner">
+					<h1>
+						<img src="<?php bloginfo('template_directory');?>/images/design/logo.png" alt="" />
+						<span><?php bloginfo( 'description' ); ?></span>
+					</h1>
+				</div>
 			</section>
 			<section id="references">
 

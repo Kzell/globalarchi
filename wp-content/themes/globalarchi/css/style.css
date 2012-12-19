@@ -95,7 +95,7 @@ html {
   float: left;
   margin-top: 14px;
   padding: 7px 6px 7px 20px;
-  background: url('../images/design/sprite.png?1355916406') no-repeat 8px 8px #222222;
+  background: url('../images/design/sprite.png?1355917892') no-repeat 8px 8px #222222;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
@@ -106,14 +106,14 @@ html {
   float: left;
   margin-top: 30px;
   padding: 6px 8px 6px 20px;
-  background: url('../images/design/sprite.png?1355916406') no-repeat 8px 8px #c82121;
+  background: url('../images/design/sprite.png?1355917892') no-repeat 8px 8px #c82121;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
 }
 /* line 33, ../sass/modules/_components.scss */
 .visit:hover, .visit:active {
-  background: url('../images/design/sprite.png?1355916406') no-repeat 8px 8px #9c1a1a;
+  background: url('../images/design/sprite.png?1355917892') no-repeat 8px 8px #9c1a1a;
 }
 
 /*@mixin btn-dark-grey{
@@ -255,7 +255,7 @@ header nav .menu {
 /* line 26, ../sass/parts/_header.scss */
 header nav .menu li {
   float: left;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 /* line 30, ../sass/parts/_header.scss */
 header nav .menu li:first-child {
@@ -368,7 +368,7 @@ footer strong {
   margin-bottom: 2px;
 }
 /* line 9, ../sass/parts/_home.scss */
-.home #logo h1 {
+.home #logo .inner {
   /*display: inline;*/
   float: left;
   width: 430px;
@@ -377,12 +377,12 @@ footer strong {
   background-color: rgba(255, 255, 255, 0.9);
 }
 /* line 14, ../sass/parts/_home.scss */
-.home #logo h1 a {
+.home #logo .inner h1 {
   display: block;
   padding: 32px;
 }
 /* line 18, ../sass/parts/_home.scss */
-.home #logo h1 span {
+.home #logo .inner span {
   display: block;
   font-size: 10px;
   font-style: italic;
