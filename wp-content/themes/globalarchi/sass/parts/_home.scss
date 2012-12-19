@@ -7,16 +7,19 @@
 		margin-bottom:2px;
 		
 		h1{	
-			@include column(5);
+			@include column(6);
 			margin-left:0;
-			background:#fff;
-			
+			background-color:rgba(255, 255, 255, 0.9);
+
 			a{
 				display:block;
 				padding:32px;
 			}
 			span{
 				display:block;
+				font-size:10px;
+				font-style: italic;
+				color:$light_black;
 			}
 		}
 	}
@@ -41,7 +44,7 @@
 	.description_projet{
 		@include column(6);
 		height:520px;
-		background-color:$white;
+		background-color:rgba(255, 255, 255, 0.9);
 		opacity:0;
 		margin:0;
 		
@@ -72,7 +75,7 @@
 		@include column(10);
 		margin:2px 0 0;
 		height:206px;
-		background:#fff;
+		background-color:rgba(255, 255, 255, 0.9);
 		
 		.inner{
 			padding:30px;
