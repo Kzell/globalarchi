@@ -80,7 +80,7 @@
 				</div>
 			</section><!--END News-->
 		</div><!--END Wrapper-->
-		<img alt="Projet" class="bg_fullscreen" src="<?php bloginfo('template_directory');?>/images/visuals/background_home.jpg" />
+		<img alt="Projet" class="bg_fullscreen"style="display:none" src="<?php bloginfo('template_directory');?>/images/visuals/background_home.jpg" />
 	</div><!--END Content-->
 
 <?php get_footer(); ?>

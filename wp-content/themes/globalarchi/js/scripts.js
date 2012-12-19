@@ -30,6 +30,8 @@ function init(){
 $(window).load(function(){
     $('body').css({'top' : 2*window_height});
     $('.bg_fullscreen').css('position', 'absolute');
+        $('.bg_fullscreen').css('display', 'block');
+
     $('body').animate({'top' : '0px'}, 800,function(){
         $('.bg_fullscreen').css('position', 'fixed');
         if($('body').hasClass('home')){
