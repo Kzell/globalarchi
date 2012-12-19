@@ -255,9 +255,13 @@ header nav .menu {
 /* line 26, ../sass/parts/_header.scss */
 header nav .menu li {
   float: left;
-  margin-right: 40px;
+  margin-left: 40px;
 }
 /* line 30, ../sass/parts/_header.scss */
+header nav .menu li:first-child {
+  margin-left: 0;
+}
+/* line 34, ../sass/parts/_header.scss */
 header nav .menu li a {
   display: block;
   padding: 20px 16px 13px 13px;
@@ -266,22 +270,22 @@ header nav .menu li a {
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 40, ../sass/parts/_header.scss */
+/* line 44, ../sass/parts/_header.scss */
 header nav .menu li a:hover, header nav .menu li a:active, header nav .menu li a.active {
   background-color: #222222;
   color: #fff;
 }
-/* line 48, ../sass/parts/_header.scss */
+/* line 52, ../sass/parts/_header.scss */
 header #lang_sel {
   float: left;
 }
-/* line 51, ../sass/parts/_header.scss */
+/* line 55, ../sass/parts/_header.scss */
 header #btn_footer {
   float: left;
   height: 33px;
   position: relative;
 }
-/* line 56, ../sass/parts/_header.scss */
+/* line 60, ../sass/parts/_header.scss */
 header #btn_footer a {
   width: 20px;
   height: 18px;
@@ -290,7 +294,7 @@ header #btn_footer a {
   bottom: 0px;
   right: 0px;
 }
-/* line 66, ../sass/parts/_header.scss */
+/* line 70, ../sass/parts/_header.scss */
 header .btn {
   /*default color*/
   background-color: #4a4a4a;
@@ -445,7 +449,7 @@ footer strong {
 .home #news {
   /*display: inline;*/
   float: left;
-  width: 718px;
+  width: 862px;
   margin: 0 1px;
   margin: 2px 0 0;
   height: 206px;
