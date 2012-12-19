@@ -14,14 +14,11 @@
 				<section id="description_projet">
 					<div class="title">
 						<h2><?php echo the_title() ?></h2>
+						<strong><?php echo get_field('town').' - '.get_field('country'); ?></strong>
 					</div>
 					<ul class="description_list">
 						<li class="award">
 							<strong><?php echo get_field('award') ?></strong>
-						</li>
-						<li>
-							<span>Lieu : </span>
-							<strong><?php echo get_field('country').' - '.get_field('town'); ?></strong>
 						</li>
 						<li>
 							<span>Maîtrise d'Ouvrage : </span>

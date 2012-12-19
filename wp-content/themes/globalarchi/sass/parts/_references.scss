@@ -137,6 +137,13 @@
 				font-family: $font-titles;
 				font-size:24px;
 			}
+			strong{
+				display: block;
+				padding-top:14px;
+				font-size:11px;
+				color:$light_black;
+				text-transform:uppercase;
+			}
 		}
 	
 		ul{

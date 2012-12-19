@@ -709,16 +709,24 @@ footer strong {
   font-family: "Scada", Arial, sans-serif;
   font-size: 24px;
 }
-/* line 142, ../sass/parts/_references.scss */
+/* line 140, ../sass/parts/_references.scss */
+.single_reference #description_projet .title strong {
+  display: block;
+  padding-top: 14px;
+  font-size: 11px;
+  color: #222222;
+  text-transform: uppercase;
+}
+/* line 149, ../sass/parts/_references.scss */
 .single_reference #description_projet ul {
   float: left;
   padding: 18px 18px 12px;
 }
-/* line 147, ../sass/parts/_references.scss */
+/* line 154, ../sass/parts/_references.scss */
 .single_reference .banner_show_hide {
   float: left;
 }
-/* line 150, ../sass/parts/_references.scss */
+/* line 157, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference {
   float: left;
   margin: 50px 0 0 1px;
@@ -727,13 +735,13 @@ footer strong {
   color: transparent;
   background: url('../images/design/sprite.png?1355957415') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
 }
-/* line 158, ../sass/parts/_references.scss */
+/* line 165, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference.opened {
   background: url('../images/design/sprite.png?1355957415') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
 }
 
 /* Page references */
-/* line 167, ../sass/parts/_references.scss */
+/* line 174, ../sass/parts/_references.scss */
 .references_list #logo .inner {
   /*display: inline;*/
   float: left;
@@ -742,17 +750,17 @@ footer strong {
   width: 100%;
   margin: 0;
 }
-/* line 172, ../sass/parts/_references.scss */
+/* line 179, ../sass/parts/_references.scss */
 .references_list #logo h1 {
   float: left;
 }
-/* line 175, ../sass/parts/_references.scss */
+/* line 182, ../sass/parts/_references.scss */
 .references_list #logo .filters {
   float: right;
   min-width: 400px;
   padding-top: 31px;
 }
-/* line 180, ../sass/parts/_references.scss */
+/* line 187, ../sass/parts/_references.scss */
 .references_list #logo .filters a {
   float: left;
   margin-top: 2px;
@@ -762,23 +770,23 @@ footer strong {
   text-indent: -9999px;
   color: transparent;
 }
-/* line 189, ../sass/parts/_references.scss */
+/* line 196, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_blocks {
   background: url('../images/design/sprite.png?1355957415') no-repeat -920px 0 transparent;
 }
-/* line 192, ../sass/parts/_references.scss */
+/* line 199, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_list {
   background: url('../images/design/sprite.png?1355957415') no-repeat -800px 0 transparent;
 }
-/* line 197, ../sass/parts/_references.scss */
+/* line 204, ../sass/parts/_references.scss */
 .references_list #logo form {
   float: left;
 }
-/* line 201, ../sass/parts/_references.scss */
+/* line 208, ../sass/parts/_references.scss */
 .references_list .photos_list {
   margin: 10px 0;
 }
-/* line 204, ../sass/parts/_references.scss */
+/* line 211, ../sass/parts/_references.scss */
 .references_list .photos_list li {
   /*display: inline;*/
   float: left;
@@ -794,12 +802,12 @@ footer strong {
   transition: background 0.1s ease-in, color 0.2s ease-out;
   list-style: none;
 }
-/* line 213, ../sass/parts/_references.scss */
+/* line 220, ../sass/parts/_references.scss */
 .references_list .photos_list li article {
   height: 200px;
   overflow: hidden;
 }
-/* line 218, ../sass/parts/_references.scss */
+/* line 225, ../sass/parts/_references.scss */
 .references_list .photos_list li .title {
   position: absolute;
   width: 100%;
@@ -816,7 +824,7 @@ footer strong {
   transition: opacity 0.2s ease-in;
   font-weight: bold;
 }
-/* line 234, ../sass/parts/_references.scss */
+/* line 241, ../sass/parts/_references.scss */
 .references_list .photos_list li .title h2 {
   position: absolute;
   bottom: 14px;
@@ -825,13 +833,13 @@ footer strong {
   font-size: 24px;
   line-height: 28px;
 }
-/* line 243, ../sass/parts/_references.scss */
+/* line 250, ../sass/parts/_references.scss */
 .references_list .photos_list li .title span {
   display: block;
   margin: 28px 0 0 26px;
   font-size: 48px;
 }
-/* line 250, ../sass/parts/_references.scss */
+/* line 257, ../sass/parts/_references.scss */
 .references_list .photos_list li img {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -839,11 +847,11 @@ footer strong {
   transition: all 0.2s ease-in-out;
   z-index: -1;
 }
-/* line 256, ../sass/parts/_references.scss */
+/* line 263, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover .title {
   opacity: 1;
 }
-/* line 259, ../sass/parts/_references.scss */
+/* line 266, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -852,14 +860,14 @@ footer strong {
 }
 
 /* Scrollbar */
-/* line 277, ../sass/parts/_references.scss */
+/* line 284, ../sass/parts/_references.scss */
 .antiscroll-wrap {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
 
-/* line 283, ../sass/parts/_references.scss */
+/* line 290, ../sass/parts/_references.scss */
 .antiscroll-scrollbar {
   background: white;
   -webkit-box-shadow: 0 0 1px #fff;
@@ -873,13 +881,13 @@ footer strong {
   -o-transition: linear 300ms opacity;
 }
 
-/* line 296, ../sass/parts/_references.scss */
+/* line 303, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-shown {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* line 301, ../sass/parts/_references.scss */
+/* line 308, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-horizontal {
   height: 7px;
   margin-left: 2px;
@@ -888,7 +896,7 @@ footer strong {
   opacity: 0 !important;
 }
 
-/* line 309, ../sass/parts/_references.scss */
+/* line 316, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-vertical {
   width: 10px;
   margin-top: 15px;
@@ -898,12 +906,12 @@ footer strong {
   opacity: 1 !important;
 }
 
-/* line 318, ../sass/parts/_references.scss */
+/* line 325, ../sass/parts/_references.scss */
 .antiscroll-inner {
   overflow: scroll;
 }
 
-/* line 322, ../sass/parts/_references.scss */
+/* line 329, ../sass/parts/_references.scss */
 .antiscroll-inner::-webkit-scrollbar, .antiscroll-inner::scrollbar {
   width: 0;
   height: 0;
