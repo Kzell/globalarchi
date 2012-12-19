@@ -8,7 +8,7 @@
 
 //Default values // 980px
 $columnWidth: 70px !default;
-$gutterWidth: 2px !default;
+$gutterWidth: 10px !default;
 $columns: 12 !default;
 $totalWidth: gridsystem-width($columns) !default;
 $containerWidth: $totalWidth !default;

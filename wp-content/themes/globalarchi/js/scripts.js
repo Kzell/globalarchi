@@ -93,7 +93,7 @@ $(document).ready(function(){
   	});
 
     //Antiscroll JS
-    if($('body').hasClass('references')){
+    if($('body').hasClass('post-type-archive-references')){
         heightReferences = window_height - $('header').height() - 20;
         $('.box-wrap').css('height',heightReferences);
         $('.box').css('height',heightReferences);

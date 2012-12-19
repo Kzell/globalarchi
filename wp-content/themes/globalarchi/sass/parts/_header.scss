@@ -2,7 +2,7 @@
 
 header{
 	position: fixed;
-	z-index:999;
+	z-index:9999;
 	bottom:0;
 	background:$white;
 	width:100%;
@@ -74,7 +74,7 @@ header{
 
 		&.opened {
 			#currentLangage span{
-				background-position-y: 0px;
+				background-position-y: 0px; 
 			}
 
 			ul{
@@ -114,7 +114,7 @@ header{
 		a{
 			width:20px;
 			height:18px;
-			background: image-url('sprite.png') no-repeat 5px -395px #000;
+			background: image-url('sprite.png') no-repeat 5px -395px $light_black;
 			@include border-radius(10px 10px 0px 0px);
 			position:absolute;
 			bottom:0px;

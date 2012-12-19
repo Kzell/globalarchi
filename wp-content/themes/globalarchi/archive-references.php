@@ -104,11 +104,10 @@
 				}
 				echo '</select>';
 			?>
-		
-			<select name="date" id="order_date">
-				<option value="desc" selected>Décroissant</option>
-				<option value="asc">Croissant</option>
-			</select>
+				<select name="date" id="order_date">
+					<option value="desc" selected>Décroissant</option>
+					<option value="asc">Croissant</option>
+				</select>
 		</form>
 		
 		
