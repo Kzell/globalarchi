@@ -260,3 +260,22 @@
 		}
 	}
 }
+/* Page references */
+.references_list{
+	#logo{
+
+		.inner{
+			@include column(12);
+			margin:0;
+		}
+		h1{
+			float:left;
+		}
+		.filters{
+			float:right;
+		}
+		form{
+			float:left;
+		}
+	}
+}
