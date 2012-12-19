@@ -43,7 +43,7 @@ body{
 }
 
 .wrapper{
-	width:950px;
+	width:970px;
 	float:none;
 	margin:42px auto 0;
 }
@@ -80,8 +80,14 @@ input[type="email"]{line-height:20px;}
 		color:$light_black;
 		-webkit-appearance: none;
 		@include border-radius(0);
-			background:image-url('select_btn.gif') no-repeat 100% 0 #fff;
-
+		background:image-url('select_btn.gif') no-repeat 100% 0 #fff;
+		cursor:pointer;
+		
+		option{
+			-webkit-appearance: none;
+			@include border-radius(0);
+			background:#fff;
+		}
 	}
 	
 	
