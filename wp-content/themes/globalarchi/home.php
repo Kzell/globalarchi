@@ -5,10 +5,8 @@
 		
 			<section id="logo">
 				<h1>
-					<a href="index.html" rel="">
-						<img src="<?php bloginfo('template_directory');?>/images/design/logo.png" alt="" />
-						<span><?php bloginfo( 'description' ); ?></hspan>
-					</a>
+					<img src="<?php bloginfo('template_directory');?>/images/design/logo.png" alt="" />
+					<span><?php bloginfo( 'description' ); ?></span>
 				</h1>
 			</section>
 			<section id="references">
