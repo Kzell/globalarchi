@@ -105,17 +105,17 @@
 		</div><!--End filters-->
 		</div><!--End inner-->
 	</section>
-
+<ul id="results"></ul>
 
 
 <section id="main" class="box-wrap antiscroll-wrap">
 			<div id="content" class="box">
 				<ul class="photos_list antiscroll-inner">
 					<li>
-						<a href="projet.html">
+						<a href="<?php the_permalink() ?>">
 							<article>
 								<div class="title">
-																								<span>01</span>
+									<span><?php echo get_field('date') ?></span>
 									<h2><?php the_title(); ?></h2>
 								</div><!--END .title-->
 								<img alt="#" src="<?php echo get_field('picture') ?>" />
