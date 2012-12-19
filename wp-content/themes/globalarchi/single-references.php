@@ -16,6 +16,9 @@
 						<h2><?php echo the_title() ?></h2>
 					</div>
 					<ul class="description_list">
+						<li class="award">
+							<strong><?php echo get_field('award') ?></strong>
+						</li>
 						<li>
 							<span>Lieu : </span>
 							<strong><?php echo get_field('country').' - '.get_field('town'); ?></strong>
