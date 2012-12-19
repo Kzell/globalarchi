@@ -55,7 +55,7 @@
 												<strong><?php the_field('price'); ?></strong>
 											</li>
 										</ul>
-										<a class="visit" href="<?php the_permalink();?>">Voir le projet</a>
+										<a class="read_more" href="<?php the_permalink();?>">Voir le projet</a>
 									</div>
 								</div>
 							</div>

@@ -95,25 +95,29 @@ html {
   float: left;
   margin-top: 14px;
   padding: 7px 6px 7px 20px;
-  background: url('../images/design/sprite.png?1355917892') no-repeat 8px 8px #222222;
+  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #222222;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
 }
+/* line 18, ../sass/modules/_components.scss */
+.read_more:hover, .read_more:active {
+  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #090909;
+}
 
-/* line 22, ../sass/modules/_components.scss */
+/* line 27, ../sass/modules/_components.scss */
 .visit {
   float: left;
   margin-top: 30px;
   padding: 6px 8px 6px 20px;
-  background: url('../images/design/sprite.png?1355917892') no-repeat 8px 8px #c82121;
+  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #c82121;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
 }
-/* line 33, ../sass/modules/_components.scss */
+/* line 38, ../sass/modules/_components.scss */
 .visit:hover, .visit:active {
-  background: url('../images/design/sprite.png?1355917892') no-repeat 8px 8px #9c1a1a;
+  background: url('../images/design/sprite.png?1355918383') no-repeat 8px 8px #9c1a1a;
 }
 
 /*@mixin btn-dark-grey{
@@ -141,14 +145,14 @@ html {
 */
 /* Zoom - plugin js */
 /*Some CSS*/
-/* line 96, ../sass/modules/_components.scss */
+/* line 101, ../sass/modules/_components.scss */
 .zoom_enable {
   width: 980px;
   position: relative;
 }
 
 /*Lets create the magnifying glass*/
-/* line 99, ../sass/modules/_components.scss */
+/* line 104, ../sass/modules/_components.scss */
 .large {
   width: 175px;
   height: 175px;
@@ -163,7 +167,7 @@ html {
 }
 
 /*To solve overlap bug at the edges during magnification*/
-/* line 116, ../sass/modules/_components.scss */
+/* line 121, ../sass/modules/_components.scss */
 .small {
   display: block;
 }
@@ -311,7 +315,7 @@ header .btn {
   border-radius: 0 6px 6px 6px;
   border: none;
 }
-/* line 53, ../sass/modules/_components.scss */
+/* line 58, ../sass/modules/_components.scss */
 header .btn:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6e6e6e), color-stop(100%, #454545));
   background: -webkit-linear-gradient(top, #6e6e6e 0%, #454545 100%);
@@ -439,13 +443,14 @@ footer strong {
   float: left;
   margin: 20px 0 14px;
   width: 346px;
+  height: 264px;
 }
-/* line 69, ../sass/parts/_home.scss */
+/* line 70, ../sass/parts/_home.scss */
 .home .description_projet p {
   color: #222222;
   font-size: 12px;
 }
-/* line 74, ../sass/parts/_home.scss */
+/* line 75, ../sass/parts/_home.scss */
 .home #news {
   /*display: inline;*/
   float: left;
@@ -455,11 +460,11 @@ footer strong {
   height: 206px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 80, ../sass/parts/_home.scss */
+/* line 81, ../sass/parts/_home.scss */
 .home #news .inner {
   padding: 30px;
 }
-/* line 83, ../sass/parts/_home.scss */
+/* line 84, ../sass/parts/_home.scss */
 .home #news span {
   float: left;
   width: 100%;
@@ -467,23 +472,23 @@ footer strong {
   font-size: 12px;
   margin: 0 0 20px;
 }
-/* line 90, ../sass/parts/_home.scss */
+/* line 91, ../sass/parts/_home.scss */
 .home #news img {
   clear: both;
   float: left;
   margin-right: 20px;
 }
-/* line 95, ../sass/parts/_home.scss */
+/* line 96, ../sass/parts/_home.scss */
 .home #news p {
   float: left;
   color: #222222;
   font-size: 12px;
 }
-/* line 100, ../sass/parts/_home.scss */
+/* line 101, ../sass/parts/_home.scss */
 .home #news .article_text {
   float: left;
 }
-/* line 103, ../sass/parts/_home.scss */
+/* line 104, ../sass/parts/_home.scss */
 .home #news a {
   margin-top: 24px;
 }
