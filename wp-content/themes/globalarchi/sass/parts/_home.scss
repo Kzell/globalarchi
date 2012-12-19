@@ -6,12 +6,12 @@
 		width:100%;	
 		margin-bottom:2px;
 		
-		h1{	
+		.inner{	
 			@include column(6);
 			margin-left:0;
 			background-color:rgba(255, 255, 255, 0.9);
 
-			a{
+			h1{
 				display:block;
 				padding:32px;
 			}
@@ -72,7 +72,7 @@
 		}
 	}
 	#news{
-		@include column(10);
+		@include column(12);
 		margin:2px 0 0;
 		height:206px;
 		background-color:rgba(255, 255, 255, 0.9);

@@ -25,7 +25,11 @@ header{
 					
 			li{
 				float:left;
-				margin-right:40px;
+				margin-left:20px;
+				
+				&:first-child{
+					margin-left:0;
+				}
 
 				a{
 					display: block;
