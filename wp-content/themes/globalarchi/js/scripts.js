@@ -93,6 +93,7 @@ $(document).ready(function(){
   	});
 
     //Antiscroll JS
+    /*
     if($('body').hasClass('post-type-archive-references')){
         heightReferences = window_height - $('header').height() - 20;
         $('.box-wrap').css('height',heightReferences);
@@ -101,6 +102,7 @@ $(document).ready(function(){
         $('.antiscroll-inner').css('height',heightReferences);
         $('.box-wrap').antiscroll().data('antiscroll');
     }
+    */
 });  
 
 

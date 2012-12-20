@@ -28,17 +28,16 @@
 			  	success: function(response){
 
 			  		$('.loader').css('display','none');
-
 			  		$('.photos_list').empty();
 
-			  		console.log(response);
-
 			  		$.each(response, function(value, key) {
+			  			image = key[3].sizes.thumbnail;
+
 			  			$li = $('<li>');
 			  			$a = $('<a>').attr('href',key[1]);
 			  			$article = $('<article>');
 			  			$div = $('<div>').addClass('title');
-			  			$img = $('<img>').attr('src',key[3]);
+			  			$img = $('<img>').attr('src',image);
 			  			$span = $('<span>').html(key[2]);
 			  			$h2 = $('<h2>').html(key[0]);
 
@@ -55,7 +54,6 @@
 					});
 			    },
 			    error: function(response){
-			    	console.log(response);
 			    	$('.loader').css('display','none');
 			    	console.log('error');
 			    }

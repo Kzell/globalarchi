@@ -95,14 +95,14 @@ html {
   float: left;
   margin-top: 14px;
   padding: 7px 6px 7px 20px;
-  background: url('../images/design/sprite.png?1355958471') no-repeat 8px 8px #222222;
+  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #222222;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
 }
 /* line 18, ../sass/modules/_components.scss */
 .read_more:hover, .read_more:active {
-  background: url('../images/design/sprite.png?1355958471') no-repeat 8px 8px #090909;
+  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #090909;
 }
 
 /* line 27, ../sass/modules/_components.scss */
@@ -110,14 +110,14 @@ html {
   float: left;
   margin-top: 30px;
   padding: 6px 8px 6px 20px;
-  background: url('../images/design/sprite.png?1355958471') no-repeat 8px 8px #c82121;
+  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #c82121;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
 }
 /* line 38, ../sass/modules/_components.scss */
 .visit:hover, .visit:active {
-  background: url('../images/design/sprite.png?1355958471') no-repeat 8px 8px #9c1a1a;
+  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #9c1a1a;
 }
 
 /*@mixin btn-dark-grey{
@@ -178,7 +178,7 @@ html {
 /* line 37, ../sass/style.scss */
 body {
   font-family: Arial, Helvetica, "Sans Serif";
-  background: url('../images/design/bg_pattern.jpg?1355849463') repeat 0 0 white;
+  background: url('../images/design/bg_pattern.jpg?1355961821') repeat 0 0 white;
   position: relative;
   overflow: hidden;
   top: 9999px;
@@ -237,7 +237,7 @@ select {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  background: url('../images/design/select_btn.gif?1355954130') no-repeat 100% 0 #e9e9e9;
+  background: url('../images/design/select_btn.gif') no-repeat 100% 0 #e9e9e9;
   cursor: pointer;
 }
 /* line 86, ../sass/style.scss */
@@ -319,7 +319,7 @@ header #langages #currentLangage {
 }
 /* line 65, ../sass/parts/_header.scss */
 header #langages #currentLangage span {
-  background: url('../images/design/sprite_arrow_langages.jpg?1355933738');
+  background: url('../images/design/sprite_arrow_langages.jpg?1355961822');
   width: 13px;
   height: 7px;
   position: absolute;
@@ -367,7 +367,7 @@ header #btn_footer {
 header #btn_footer a {
   width: 20px;
   height: 18px;
-  background: url('../images/design/sprite.png?1355958471') no-repeat 5px -395px #222222;
+  background: url('../images/design/sprite.png?1355961822') no-repeat 5px -395px #222222;
   -webkit-border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -ms-border-radius: 10px 10px 0px 0px;
@@ -521,7 +521,7 @@ footer strong {
 .fullscreen_pattern {
   position: absolute;
   top: 0;
-  background: url('../images/design/fullscreen_pattern.png?1355849463') repeat 0 0 transparent;
+  background: url('../images/design/fullscreen_pattern.png?1355961821') repeat 0 0 transparent;
 }
 
 /* line 92, ../sass/parts/_home.scss */
@@ -587,7 +587,7 @@ footer strong {
 }
 /* line 28, ../sass/parts/_references.scss */
 .description_list li.award {
-  background: url('../images/design/sprite.png?1355958471') no-repeat -989px -198px;
+  background: url('../images/design/sprite.png?1355961822') no-repeat -989px -198px;
 }
 /* line 31, ../sass/parts/_references.scss */
 .description_list li.award strong {
@@ -702,31 +702,46 @@ footer strong {
   float: left;
   padding: 18px 18px 12px 28px;
 }
-/* line 136, ../sass/parts/_references.scss */
+/* line 134, ../sass/parts/_references.scss */
+.single_reference #description_projet .title h2 {
+  color: #222222;
+  text-transform: uppercase;
+  font-family: "Scada", Arial, sans-serif;
+  font-size: 24px;
+}
+/* line 140, ../sass/parts/_references.scss */
+.single_reference #description_projet .title strong {
+  display: block;
+  padding-top: 14px;
+  font-size: 11px;
+  color: #222222;
+  text-transform: uppercase;
+}
+/* line 149, ../sass/parts/_references.scss */
 .single_reference #description_projet ul {
   float: left;
   padding: 18px 18px 12px;
 }
-/* line 141, ../sass/parts/_references.scss */
+/* line 154, ../sass/parts/_references.scss */
 .single_reference .banner_show_hide {
   float: left;
 }
-/* line 144, ../sass/parts/_references.scss */
+/* line 157, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference {
   float: left;
   margin: 50px 0 0 1px;
   min-height: 274px;
   text-indent: -9999px;
   color: transparent;
-  background: url('../images/design/sprite.png?1355958471') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355961822') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
 }
-/* line 152, ../sass/parts/_references.scss */
+/* line 165, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference.opened {
-  background: url('../images/design/sprite.png?1355958471') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355961822') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
 }
 
 /* Page references */
-/* line 161, ../sass/parts/_references.scss */
+/* line 174, ../sass/parts/_references.scss */
 .references_list #logo .inner {
   /*display: inline;*/
   float: left;
@@ -735,17 +750,17 @@ footer strong {
   width: 100%;
   margin: 0;
 }
-/* line 166, ../sass/parts/_references.scss */
+/* line 179, ../sass/parts/_references.scss */
 .references_list #logo h1 {
   float: left;
 }
-/* line 169, ../sass/parts/_references.scss */
+/* line 182, ../sass/parts/_references.scss */
 .references_list #logo .filters {
   float: right;
   min-width: 400px;
   padding-top: 31px;
 }
-/* line 174, ../sass/parts/_references.scss */
+/* line 187, ../sass/parts/_references.scss */
 .references_list #logo .filters a {
   float: left;
   margin-top: 2px;
@@ -755,23 +770,23 @@ footer strong {
   text-indent: -9999px;
   color: transparent;
 }
-/* line 183, ../sass/parts/_references.scss */
+/* line 196, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_blocks {
-  background: url('../images/design/sprite.png?1355958471') no-repeat -920px 0 transparent;
+  background: url('../images/design/sprite.png?1355961822') no-repeat -920px 0 transparent;
 }
-/* line 186, ../sass/parts/_references.scss */
+/* line 199, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_list {
-  background: url('../images/design/sprite.png?1355958471') no-repeat -800px 0 transparent;
+  background: url('../images/design/sprite.png?1355961822') no-repeat -800px 0 transparent;
 }
-/* line 191, ../sass/parts/_references.scss */
+/* line 204, ../sass/parts/_references.scss */
 .references_list #logo form {
   float: left;
 }
-/* line 195, ../sass/parts/_references.scss */
+/* line 208, ../sass/parts/_references.scss */
 .references_list .photos_list {
   margin: 10px 0;
 }
-/* line 198, ../sass/parts/_references.scss */
+/* line 211, ../sass/parts/_references.scss */
 .references_list .photos_list li {
   /*display: inline;*/
   float: left;
@@ -785,13 +800,14 @@ footer strong {
   -moz-transition: background 0.1s ease-in, color 0.2s ease-out;
   -o-transition: background 0.1s ease-in, color 0.2s ease-out;
   transition: background 0.1s ease-in, color 0.2s ease-out;
+  list-style: none;
 }
-/* line 206, ../sass/parts/_references.scss */
+/* line 220, ../sass/parts/_references.scss */
 .references_list .photos_list li article {
   height: 200px;
   overflow: hidden;
 }
-/* line 211, ../sass/parts/_references.scss */
+/* line 225, ../sass/parts/_references.scss */
 .references_list .photos_list li .title {
   position: absolute;
   width: 100%;
@@ -808,7 +824,7 @@ footer strong {
   transition: opacity 0.2s ease-in;
   font-weight: bold;
 }
-/* line 227, ../sass/parts/_references.scss */
+/* line 241, ../sass/parts/_references.scss */
 .references_list .photos_list li .title h2 {
   position: absolute;
   bottom: 14px;
@@ -817,13 +833,13 @@ footer strong {
   font-size: 24px;
   line-height: 28px;
 }
-/* line 236, ../sass/parts/_references.scss */
+/* line 250, ../sass/parts/_references.scss */
 .references_list .photos_list li .title span {
   display: block;
   margin: 28px 0 0 26px;
   font-size: 48px;
 }
-/* line 243, ../sass/parts/_references.scss */
+/* line 257, ../sass/parts/_references.scss */
 .references_list .photos_list li img {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -831,11 +847,11 @@ footer strong {
   transition: all 0.2s ease-in-out;
   z-index: -1;
 }
-/* line 249, ../sass/parts/_references.scss */
+/* line 263, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover .title {
   opacity: 1;
 }
-/* line 252, ../sass/parts/_references.scss */
+/* line 266, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -844,14 +860,14 @@ footer strong {
 }
 
 /* Scrollbar */
-/* line 270, ../sass/parts/_references.scss */
+/* line 284, ../sass/parts/_references.scss */
 .antiscroll-wrap {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
 
-/* line 276, ../sass/parts/_references.scss */
+/* line 290, ../sass/parts/_references.scss */
 .antiscroll-scrollbar {
   background: white;
   -webkit-box-shadow: 0 0 1px #fff;
@@ -865,13 +881,13 @@ footer strong {
   -o-transition: linear 300ms opacity;
 }
 
-/* line 289, ../sass/parts/_references.scss */
+/* line 303, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-shown {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* line 294, ../sass/parts/_references.scss */
+/* line 308, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-horizontal {
   height: 7px;
   margin-left: 2px;
@@ -880,7 +896,7 @@ footer strong {
   opacity: 0 !important;
 }
 
-/* line 302, ../sass/parts/_references.scss */
+/* line 316, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-vertical {
   width: 10px;
   margin-top: 15px;
@@ -890,12 +906,12 @@ footer strong {
   opacity: 1 !important;
 }
 
-/* line 311, ../sass/parts/_references.scss */
+/* line 325, ../sass/parts/_references.scss */
 .antiscroll-inner {
   overflow: scroll;
 }
 
-/* line 315, ../sass/parts/_references.scss */
+/* line 329, ../sass/parts/_references.scss */
 .antiscroll-inner::-webkit-scrollbar, .antiscroll-inner::scrollbar {
   width: 0;
   height: 0;

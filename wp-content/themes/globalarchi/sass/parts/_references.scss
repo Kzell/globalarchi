@@ -4,7 +4,7 @@
 
 		li{
 			position:relative;
-			width:100%; 
+			width:100%;
 			clear:both;
 			font-size:12px;
 			line-height:1.5;
@@ -57,7 +57,7 @@
 				float:left;
 				font-family:$font-titles;
 				font-size: 48px;
-				color:$light_black;
+				color:$light_black; 
 			}
 			> h2{
 				float:left;
@@ -131,6 +131,19 @@
 			float:left;
 			padding:18px 18px 12px 28px;
 
+			h2{
+				color:$light_black;
+				text-transform: uppercase;
+				font-family: $font-titles;
+				font-size:24px;
+			}
+			strong{
+				display: block;
+				padding-top:14px;
+				font-size:11px;
+				color:$light_black;
+				text-transform:uppercase;
+			}
 		}
 	
 		ul{
@@ -202,6 +215,7 @@
 			margin-bottom:5px;
 			border:solid 1px #fff;		
 			@include transition(background .1s ease-in, color .2s ease-out);
+			list-style:none;
 				
 			article{
 				height:200px;

@@ -14,14 +14,11 @@
 				<section id="description_projet">
 					<div class="title">
 						<h2><?php echo the_title() ?></h2>
+						<strong><?php echo get_field('town').' - '.get_field('country'); ?></strong>
 					</div>
 					<ul class="description_list">
 						<li class="award">
 							<strong><?php echo get_field('award') ?></strong>
-						</li>
-						<li>
-							<span>Lieu : </span>
-							<strong><?php echo get_field('country').' - '.get_field('town'); ?></strong>
 						</li>
 						<li>
 							<span>Maîtrise d'Ouvrage : </span>
@@ -51,7 +48,11 @@
 				</section>
 			</div><!--END banner_show_hide-->
 			<a href="#" class="btn_show_hide_description_reference opened">Afficher / Masquer</a>
-			<img alt="Projet" class="bg_fullscreen"style="display:none" src="<?php echo get_field('picture') ?>" />
+			<?php 
+				$image = get_field('picture');
+				$image = $image["sizes"]["large"];
+			?>
+			<img alt="Projet" class="bg_fullscreen"style="display:none" src="<?php echo $image; ?>" />
 		</div><!--END wrapper-->
 	</div><!--END Content-->
 <?php get_footer(); ?>

@@ -53,6 +53,7 @@
 			$permalink = get_permalink();
 			$date = DateTime::createFromFormat('Ymd', get_field('date'));
 			$date = $date->format('d/m/Y');
+			//$date = get_field('date');
 			$picture = get_field('picture'); 
 
 			array_push($arraySend, array($title, $permalink, $date, $picture));

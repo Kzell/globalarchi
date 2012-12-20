@@ -30,7 +30,7 @@
 												<strong><?php echo get_field('country').' - '.get_field('town'); ?></strong>
 											</li>
 											<li>
-												<span>Maîtrise d'Ouvrage : </span>
+												<span>MaÃ®trise d'Ouvrage : </span>
 												<strong>A voir avec le client.</strong>
 											</li>
 											<li>
@@ -39,7 +39,6 @@
 													$architectes = get_field('architecte');
 													$archi = '';
 													for ($i=0; $i < sizeof($architectes); $i++) { 
-														//var_dump($architectes[$i]);
 														$archi .= '<a href="'.$architectes[$i]->guid.'">'.$architectes[$i]->post_title.'</a> - ';
 													}
 
