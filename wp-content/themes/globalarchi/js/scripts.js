@@ -5,15 +5,17 @@ var window_height;
 var currentPage = window.location.pathname.split('/');
 currentPage = currentPage[currentPage.length-1];
 
-init();
-
 $(window).resize(init);
 
 function init(){
     window_width = $(window).width();
     window_height = $(window).height();
 
-    
+    // pattern fullscreen fluid
+    $('.fullscreen_pattern').css({
+        "height" : window_height,
+        "width"  : window_width
+    });
 
     if($('body').hasClass('references')){
         heightReferences = window_height - $('header').height() - 20;
@@ -24,13 +26,14 @@ function init(){
         $('.box-wrap').antiscroll().data('antiscroll');
         $('.antiscroll-scrollbar-vertical').clone().appendTo('.description_projet');
     }
-
 }
 
 $(window).load(function(){
     $('body').css({'top' : 2*window_height});
-    $('.bg_fullscreen').css('position', 'absolute');
-        $('.bg_fullscreen').css('display', 'block');
+    $('.bg_fullscreen').css({
+        'position' : 'absolute',
+        'display' : 'block'
+    });
 
     $('body').animate({'top' : '0px'}, 800,function(){
         $('.bg_fullscreen').css('position', 'fixed');
@@ -39,14 +42,11 @@ $(window).load(function(){
             $('.description_projet').stop().animate({'opacity' : 1},500);
         }
     });
-       // pattern fullscreen fluid
-    $('.fullscreen_pattern').css({
-        "height" : window_height,
-        "width"  : window_width
-    });
 });
 
 $(document).ready(function(){
+    init();
+
     $('.panel').hover(function(){
         $(this).addClass('flip');
     },function(){
@@ -54,7 +54,7 @@ $(document).ready(function(){
     });
 
     $('#currentLangage').on('click',function(){
-        $(this).parent('#langages').addClass('opened');
+        $(this).parent('#langages').toggleClass('opened');
     });
 
     //Animation Transition Link
