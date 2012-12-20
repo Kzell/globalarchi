@@ -51,8 +51,9 @@
 		if($check){
 			$title = get_the_title();
 			$permalink = get_permalink();
-			$date = get_field('date');
-			$picture = get_field('picture');
+			$date = DateTime::createFromFormat('Ymd', get_field('date'));
+			$date = $date->format('d/m/Y');
+			$picture = get_field('picture'); 
 
 			array_push($arraySend, array($title, $permalink, $date, $picture));
 		}

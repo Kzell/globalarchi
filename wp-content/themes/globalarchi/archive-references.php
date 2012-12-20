@@ -55,6 +55,7 @@
 					});
 			    },
 			    error: function(response){
+			    	console.log(response);
 			    	$('.loader').css('display','none');
 			    	console.log('error');
 			    }
@@ -104,6 +105,7 @@
 				foreach ($countries as $country){
 					?><option value="<?php echo $country->meta_value; ?>"><?php echo $country->meta_value; ?></option><?php
 				}
+
 				echo '</select>';
 			?>
 				<select name="date" id="order_date">
@@ -111,8 +113,7 @@
 					<option value="asc">Croissant</option>
 				</select>
 		</form>
-		
-		
+
 			<img src="<?php bloginfo('template_directory') ?>/images/spinner.gif" alt="loader" class="loader"/>
 			<a href="#" class="show_list">Affichage en liste</a>
 			<a href="#" class="show_blocks">Affichage en blocs</a>
