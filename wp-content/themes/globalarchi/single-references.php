@@ -4,7 +4,7 @@
 		<div id="wrapper">
 			<div class="banner_show_hide">
 				<section id="logo">
-					<a href="<?php get_home_url(); ?>" class="inner">
+					<a href="<?php echo site_url(); ?>" class="inner">
 						<h1>
 							<img src="<?php bloginfo('template_directory');?>/images/design/logo.png" alt="" />
 							<span><?php bloginfo( 'description' ); ?></span>

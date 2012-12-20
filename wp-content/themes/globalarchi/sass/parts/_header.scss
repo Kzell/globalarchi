@@ -46,6 +46,14 @@ header{
 						color:#fff;
 					}
 				}
+
+				&.current_page_item{
+					background: #222;
+
+					a{
+						color:#FFF;
+					}
+				}
 			}
 		}
 	}
