@@ -666,51 +666,44 @@ footer strong {
 /* line 106, ../sass/parts/_references.scss */
 .single_reference #logo {
   margin-top: 50px;
-  width: 1277px;
 }
-/* line 110, ../sass/parts/_references.scss */
+/* line 111, ../sass/parts/_references.scss */
 .single_reference #logo .inner {
-  /*display: inline;*/
-  float: left;
-  width: 1270px;
-  margin: 0 5px;
+  width: 100%;
+  margin-right: 2px;
 }
-/* line 113, ../sass/parts/_references.scss */
+/* line 114, ../sass/parts/_references.scss */
 .single_reference #logo .inner h1 {
   display: block;
   padding: 18px 18px 12px 28px;
 }
-/* line 117, ../sass/parts/_references.scss */
+/* line 118, ../sass/parts/_references.scss */
 .single_reference #logo .inner span {
   display: block;
   font-size: 10px;
   font-style: italic;
   color: #222222;
 }
-/* line 125, ../sass/parts/_references.scss */
+/* line 126, ../sass/parts/_references.scss */
 .single_reference #description_projet {
   clear: left;
-  /*display: inline;*/
-  float: left;
-  width: 1270px;
-  margin: 0 5px;
-  margin: 0 2px 0 5px !important;
+  margin: 0 0px 0 5px !important;
   height: 215px;
   background: rgba(255, 255, 255, 0.9);
 }
-/* line 133, ../sass/parts/_references.scss */
+/* line 134, ../sass/parts/_references.scss */
 .single_reference #description_projet .title {
   float: left;
   padding: 18px 18px 12px 28px;
 }
-/* line 137, ../sass/parts/_references.scss */
+/* line 138, ../sass/parts/_references.scss */
 .single_reference #description_projet .title h2 {
   color: #222222;
   text-transform: uppercase;
   font-family: "Scada", Arial, sans-serif;
   font-size: 24px;
 }
-/* line 143, ../sass/parts/_references.scss */
+/* line 144, ../sass/parts/_references.scss */
 .single_reference #description_projet .title strong {
   display: block;
   padding-top: 14px;
@@ -718,31 +711,32 @@ footer strong {
   color: #222222;
   text-transform: uppercase;
 }
-/* line 152, ../sass/parts/_references.scss */
+/* line 153, ../sass/parts/_references.scss */
 .single_reference #description_projet ul {
   float: left;
   padding: 18px 18px 12px;
 }
-/* line 157, ../sass/parts/_references.scss */
+/* line 158, ../sass/parts/_references.scss */
 .single_reference .banner_show_hide {
   float: left;
+  width: 80%;
 }
-/* line 160, ../sass/parts/_references.scss */
+/* line 162, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference {
   float: left;
-  margin: 50px 0 0 1px;
+  margin: 50px 0 0 2px;
   min-height: 274px;
   text-indent: -9999px;
   color: transparent;
   background: url('../images/design/sprite.png?1355957415') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
 }
-/* line 168, ../sass/parts/_references.scss */
+/* line 170, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference.opened {
   background: url('../images/design/sprite.png?1355957415') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
 }
 
 /* Page references */
-/* line 177, ../sass/parts/_references.scss */
+/* line 179, ../sass/parts/_references.scss */
 .references_list #logo .inner {
   /*display: inline;*/
   float: left;
@@ -751,17 +745,17 @@ footer strong {
   width: 100%;
   margin: 0;
 }
-/* line 182, ../sass/parts/_references.scss */
+/* line 184, ../sass/parts/_references.scss */
 .references_list #logo h1 {
   float: left;
 }
-/* line 185, ../sass/parts/_references.scss */
+/* line 187, ../sass/parts/_references.scss */
 .references_list #logo .filters {
   float: right;
   min-width: 400px;
   padding-top: 31px;
 }
-/* line 190, ../sass/parts/_references.scss */
+/* line 192, ../sass/parts/_references.scss */
 .references_list #logo .filters a {
   float: left;
   margin-top: 2px;
@@ -771,23 +765,23 @@ footer strong {
   text-indent: -9999px;
   color: transparent;
 }
-/* line 199, ../sass/parts/_references.scss */
+/* line 201, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_blocks {
   background: url('../images/design/sprite.png?1355957415') no-repeat -920px 0 transparent;
 }
-/* line 202, ../sass/parts/_references.scss */
+/* line 204, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_list {
   background: url('../images/design/sprite.png?1355957415') no-repeat -800px 0 transparent;
 }
-/* line 207, ../sass/parts/_references.scss */
+/* line 209, ../sass/parts/_references.scss */
 .references_list #logo form {
   float: left;
 }
-/* line 211, ../sass/parts/_references.scss */
+/* line 213, ../sass/parts/_references.scss */
 .references_list .photos_list {
   margin: 10px 0;
 }
-/* line 214, ../sass/parts/_references.scss */
+/* line 216, ../sass/parts/_references.scss */
 .references_list .photos_list li {
   /*display: inline;*/
   float: left;
@@ -803,12 +797,12 @@ footer strong {
   transition: background 0.1s ease-in, color 0.2s ease-out;
   list-style: none;
 }
-/* line 223, ../sass/parts/_references.scss */
+/* line 225, ../sass/parts/_references.scss */
 .references_list .photos_list li article {
   height: 200px;
   overflow: hidden;
 }
-/* line 228, ../sass/parts/_references.scss */
+/* line 230, ../sass/parts/_references.scss */
 .references_list .photos_list li .title {
   position: absolute;
   width: 100%;
@@ -825,7 +819,7 @@ footer strong {
   transition: opacity 0.2s ease-in;
   font-weight: bold;
 }
-/* line 244, ../sass/parts/_references.scss */
+/* line 246, ../sass/parts/_references.scss */
 .references_list .photos_list li .title h2 {
   position: absolute;
   bottom: 14px;
@@ -834,13 +828,13 @@ footer strong {
   font-size: 24px;
   line-height: 28px;
 }
-/* line 253, ../sass/parts/_references.scss */
+/* line 255, ../sass/parts/_references.scss */
 .references_list .photos_list li .title span {
   display: block;
   margin: 28px 0 0 26px;
   font-size: 48px;
 }
-/* line 260, ../sass/parts/_references.scss */
+/* line 262, ../sass/parts/_references.scss */
 .references_list .photos_list li img {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -848,11 +842,11 @@ footer strong {
   transition: all 0.2s ease-in-out;
   z-index: -1;
 }
-/* line 266, ../sass/parts/_references.scss */
+/* line 268, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover .title {
   opacity: 1;
 }
-/* line 269, ../sass/parts/_references.scss */
+/* line 271, ../sass/parts/_references.scss */
 .references_list .photos_list li:hover img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -861,14 +855,14 @@ footer strong {
 }
 
 /* Scrollbar */
-/* line 287, ../sass/parts/_references.scss */
+/* line 289, ../sass/parts/_references.scss */
 .antiscroll-wrap {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
 
-/* line 293, ../sass/parts/_references.scss */
+/* line 295, ../sass/parts/_references.scss */
 .antiscroll-scrollbar {
   background: white;
   -webkit-box-shadow: 0 0 1px #fff;
@@ -882,13 +876,13 @@ footer strong {
   -o-transition: linear 300ms opacity;
 }
 
-/* line 306, ../sass/parts/_references.scss */
+/* line 308, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-shown {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* line 311, ../sass/parts/_references.scss */
+/* line 313, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-horizontal {
   height: 7px;
   margin-left: 2px;
@@ -897,7 +891,7 @@ footer strong {
   opacity: 0 !important;
 }
 
-/* line 319, ../sass/parts/_references.scss */
+/* line 321, ../sass/parts/_references.scss */
 .antiscroll-scrollbar-vertical {
   width: 10px;
   margin-top: 15px;
@@ -907,12 +901,12 @@ footer strong {
   opacity: 1 !important;
 }
 
-/* line 328, ../sass/parts/_references.scss */
+/* line 330, ../sass/parts/_references.scss */
 .antiscroll-inner {
   overflow: scroll;
 }
 
-/* line 332, ../sass/parts/_references.scss */
+/* line 334, ../sass/parts/_references.scss */
 .antiscroll-inner::-webkit-scrollbar, .antiscroll-inner::scrollbar {
   width: 0;
   height: 0;

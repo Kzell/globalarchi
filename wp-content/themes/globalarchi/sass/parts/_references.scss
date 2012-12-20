@@ -105,11 +105,12 @@
 .single_reference{
 	#logo{		
 		margin-top:50px;
+		
 		//Has changed
-		width: 1277px;
-		.inner{	
-			@include column(16);
 
+		.inner{	
+			width:100%;
+			margin-right:2px;
 			h1{
 				display:block;
 				padding:18px 18px 12px 28px;
@@ -124,9 +125,9 @@
 	}
 	#description_projet{
 		clear:left;
-		@include column(16);
+		
 		//Has changed
-		margin: 0 2px 0 5px !important;
+		margin: 0 0px 0 5px !important;
 		height:215px;
 		background: rgba(255, 255, 255, 0.9);
 		
@@ -156,10 +157,11 @@
 	}
 	.banner_show_hide{
 		float:left;
+		width:80%;
 	}
 	.btn_show_hide_description_reference{
 		float:left; 
-		margin:50px 0 0 1px;
+		margin:50px 0 0 2px;
 		min-height:274px;
 		text-indent:-9999px;
 		color:transparent;
