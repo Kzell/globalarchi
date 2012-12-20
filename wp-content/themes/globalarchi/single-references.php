@@ -21,7 +21,7 @@
 							<strong><?php echo get_field('award') ?></strong>
 						</li>
 						<li>
-							<span>Maîtrise d'Ouvrage : </span>
+							<span>MaÃ®trise d'Ouvrage : </span>
 							<strong>A voir avec le client.</strong>
 						</li>
 						<li>
