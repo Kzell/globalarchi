@@ -105,7 +105,8 @@
 .single_reference{
 	#logo{		
 		margin-top:50px;
-		width:inherit;
+		//Has changed
+		width: 1277px;
 		.inner{	
 			@include column(16);
 
@@ -124,6 +125,8 @@
 	#description_projet{
 		clear:left;
 		@include column(16);
+		//Has changed
+		margin: 0 2px 0 5px !important;
 		height:215px;
 		background: rgba(255, 255, 255, 0.9);
 		
