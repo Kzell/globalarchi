@@ -687,7 +687,7 @@ footer strong {
 /* line 126, ../sass/parts/_references.scss */
 .single_reference #description_projet {
   clear: left;
-  margin: 0 0px 0 5px !important;
+  margin: 0;
   height: 215px;
   background: rgba(255, 255, 255, 0.9);
 }
