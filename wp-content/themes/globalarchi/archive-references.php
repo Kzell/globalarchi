@@ -66,7 +66,7 @@
 <div class="wrapper">
 	<section id="logo">
 		<div class="inner">
-		<a href="<?php get_home_url(); ?>">
+		<a href="<?php echo site_url(); ?>">
 			<h1>
 				<img src="<?php bloginfo('template_directory');?>/images/design/logo.png" alt="" />
 				<span><?php bloginfo( 'description' ); ?></span>
@@ -80,7 +80,7 @@
 				$arrayArchitectes = array();
 		
 				echo '<select name="architectes" id="order_architecte">';
-				echo '<option value="" selected>Tous</option>';
+				echo '<option value="" selected>Architectes</option>';
 		
 				foreach ($posts as $post){
 					$name = get_the_title();
@@ -100,7 +100,7 @@
 				);
 		
 				echo '<select name="country" id="order_country">';
-				echo '<option value="" selected>Tous</option>';
+				echo '<option value="" selected>Pays</option>';
 		
 				foreach ($countries as $country){
 					?><option value="<?php echo $country->meta_value; ?>"><?php echo $country->meta_value; ?></option><?php
