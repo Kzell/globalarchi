@@ -95,14 +95,14 @@ html {
   float: left;
   margin-top: 14px;
   padding: 7px 6px 7px 20px;
-  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #222222;
+  background: url('../images/design/sprite.png?1355957415') no-repeat 8px 8px #222222;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
 }
 /* line 18, ../sass/modules/_components.scss */
 .read_more:hover, .read_more:active {
-  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #090909;
+  background: url('../images/design/sprite.png?1355957415') no-repeat 8px 8px #090909;
 }
 
 /* line 27, ../sass/modules/_components.scss */
@@ -110,14 +110,14 @@ html {
   float: left;
   margin-top: 30px;
   padding: 6px 8px 6px 20px;
-  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #c82121;
+  background: url('../images/design/sprite.png?1355957415') no-repeat 8px 8px #c82121;
   text-transform: uppercase;
   font-size: 12px;
   color: white;
 }
 /* line 38, ../sass/modules/_components.scss */
 .visit:hover, .visit:active {
-  background: url('../images/design/sprite.png?1355961822') no-repeat 8px 8px #9c1a1a;
+  background: url('../images/design/sprite.png?1355957415') no-repeat 8px 8px #9c1a1a;
 }
 
 /*@mixin btn-dark-grey{
@@ -178,7 +178,7 @@ html {
 /* line 37, ../sass/style.scss */
 body {
   font-family: Arial, Helvetica, "Sans Serif";
-  background: url('../images/design/bg_pattern.jpg?1355961821') repeat 0 0 white;
+  background: url('../images/design/bg_pattern.jpg?1355931058') repeat 0 0 white;
   position: relative;
   overflow: hidden;
   top: 9999px;
@@ -237,7 +237,7 @@ select {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  background: url('../images/design/select_btn.gif') no-repeat 100% 0 #e9e9e9;
+  background: url('../images/design/select_btn.gif?1355940679') no-repeat 100% 0 #e9e9e9;
   cursor: pointer;
 }
 /* line 86, ../sass/style.scss */
@@ -319,7 +319,7 @@ header #langages #currentLangage {
 }
 /* line 65, ../sass/parts/_header.scss */
 header #langages #currentLangage span {
-  background: url('../images/design/sprite_arrow_langages.jpg?1355961822');
+  background: url('../images/design/sprite_arrow_langages.jpg?1355937299');
   width: 13px;
   height: 7px;
   position: absolute;
@@ -367,7 +367,7 @@ header #btn_footer {
 header #btn_footer a {
   width: 20px;
   height: 18px;
-  background: url('../images/design/sprite.png?1355961822') no-repeat 5px -395px #222222;
+  background: url('../images/design/sprite.png?1355957415') no-repeat 5px -395px #222222;
   -webkit-border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -ms-border-radius: 10px 10px 0px 0px;
@@ -521,7 +521,7 @@ footer strong {
 .fullscreen_pattern {
   position: absolute;
   top: 0;
-  background: url('../images/design/fullscreen_pattern.png?1355961821') repeat 0 0 transparent;
+  background: url('../images/design/fullscreen_pattern.png?1355931058') repeat 0 0 transparent;
 }
 
 /* line 92, ../sass/parts/_home.scss */
@@ -587,7 +587,7 @@ footer strong {
 }
 /* line 28, ../sass/parts/_references.scss */
 .description_list li.award {
-  background: url('../images/design/sprite.png?1355961822') no-repeat -989px -198px;
+  background: url('../images/design/sprite.png?1355957415') no-repeat -989px -198px;
 }
 /* line 31, ../sass/parts/_references.scss */
 .description_list li.award strong {
@@ -734,11 +734,11 @@ footer strong {
   min-height: 274px;
   text-indent: -9999px;
   color: transparent;
-  background: url('../images/design/sprite.png?1355961822') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355957415') no-repeat -462px 112px rgba(255, 255, 255, 0.9);
 }
 /* line 168, ../sass/parts/_references.scss */
 .single_reference .btn_show_hide_description_reference.opened {
-  background: url('../images/design/sprite.png?1355961822') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
+  background: url('../images/design/sprite.png?1355957415') no-repeat -222px 112px rgba(255, 255, 255, 0.9);
 }
 
 /* Page references */
@@ -773,11 +773,11 @@ footer strong {
 }
 /* line 199, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_blocks {
-  background: url('../images/design/sprite.png?1355961822') no-repeat -920px 0 transparent;
+  background: url('../images/design/sprite.png?1355957415') no-repeat -920px 0 transparent;
 }
 /* line 202, ../sass/parts/_references.scss */
 .references_list #logo .filters a.show_list {
-  background: url('../images/design/sprite.png?1355961822') no-repeat -800px 0 transparent;
+  background: url('../images/design/sprite.png?1355957415') no-repeat -800px 0 transparent;
 }
 /* line 207, ../sass/parts/_references.scss */
 .references_list #logo form {
