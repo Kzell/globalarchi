@@ -18,7 +18,11 @@
 					</div>
 					<ul class="description_list">
 						<li class="award">
-							<strong><?php echo get_field('award') ?></strong>
+							<?php 
+								if(get_field('award')){
+									echo '<strong>'.get_field('award').'</strong>';
+								}
+							?>
 						</li>
 						<li>
 							<span>Maîtrise d'Ouvrage : </span>
